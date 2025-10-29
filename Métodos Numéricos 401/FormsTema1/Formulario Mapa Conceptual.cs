@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
 
 namespace Métodos_Numéricos_401
 {
-    public partial class Formulario_Problemario_Tema1 : Form
+    public partial class Formulario_Mapa_Conceptual : Form
     {
-        public Formulario_Problemario_Tema1()
+        public Formulario_Mapa_Conceptual()
         {
             InitializeComponent();
         }
@@ -23,11 +22,10 @@ namespace Métodos_Numéricos_401
             this.Close();
         }
 
-        private void btn_Problemario_Tema1_Click(object sender, EventArgs e)
+        private void btn_MapaConceptual_Click(object sender, EventArgs e)
         {
-            //string ruta_Problemario = @"Tema1_Problemario.pdf";
-            //Process.Start(ruta_Problemario);
-            
+            btn_MapaConceptual.Visible = false;
+            //Lógica para mostrar imagen
         }
     }
 }

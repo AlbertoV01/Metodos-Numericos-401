@@ -24,9 +24,7 @@ namespace Métodos_Numéricos_401
 
         private void btn_Ejercicio_Errores_Click(object sender, EventArgs e)
         {
-            pnl_Ejercicios.Visible = true;
-            //pnl_Ejercicios.BackgroundImage = Properties.Resources.Ejercicio_Errores;
-            pnl_Ejercicios.BackgroundImageLayout= ImageLayout.Zoom;
+           // Lógica para mostrar imagen
 
             btn_Ejercicio_Errores.Visible = false;
             btn_Ejercicio_1.Visible = false;
@@ -36,25 +34,10 @@ namespace Métodos_Numéricos_401
                        
         }
 
-        private void btn_Atras_Click(object sender, EventArgs e)
-        {
-            pnl_Ejercicios.Visible = false;
-
-            pnl_Ejercicios.BackgroundImage = null;
-
-
-            btn_Ejercicio_Errores.Visible = true;
-            btn_Ejercicio_1.Visible = true;
-            btn_Ejercicio_2.Visible = true;
-            btn_Ejercicio_3.Visible = true;
-        }
 
         private void btn_Ejercicio_1_Click(object sender, EventArgs e)
         {
-            pnl_Ejercicios.Visible = true;
-           // pnl_Ejercicios.BackgroundImage = Properties.Resources.Eejercicio1_Tema1;
-            pnl_Ejercicios.BackgroundImageLayout = ImageLayout.Zoom;
-
+            //Lógica para mostrar imagen
             btn_Ejercicio_Errores.Visible = false;
             btn_Ejercicio_1.Visible = false;
             btn_Ejercicio_2.Visible = false;
@@ -63,9 +46,7 @@ namespace Métodos_Numéricos_401
 
         private void btn_Ejercicio_2_Click(object sender, EventArgs e)
         {
-            pnl_Ejercicios.Visible = true;
-           // pnl_Ejercicios.BackgroundImage = Properties.Resources.Ejercicio2_Tema1;
-            pnl_Ejercicios.BackgroundImageLayout = ImageLayout.Zoom;
+            //Lógica para mostrar imagen
 
             btn_Ejercicio_Errores.Visible = false;
             btn_Ejercicio_1.Visible = false;
@@ -76,9 +57,7 @@ namespace Métodos_Numéricos_401
 
         private void btn_Ejercicio_3_Click(object sender, EventArgs e)
         {
-            pnl_Ejercicios.Visible = true;
-            //pnl_Ejercicios.BackgroundImage = Properties.Resources.Ejercicio3_Tema1;
-            pnl_Ejercicios.BackgroundImageLayout = ImageLayout.Zoom;
+            //Lógica para mostrar imagen
 
             btn_Ejercicio_Errores.Visible = false;
             btn_Ejercicio_1.Visible = false;

@@ -62,7 +62,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Calculus">
-      <HintPath>C:\Users\Alber\Downloads\Calculus.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Calculus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -80,18 +80,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Biseccion.cs" />
-    <Compile Include="Falsa Posicion.cs" />
+    <Compile Include="Clases\Biseccion.cs" />
+    <Compile Include="Clases\Falsa Posicion.cs" />
     <Compile Include="Formulaio Regla de Simpson 1_3 por intervalos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formulaio Regla de Simpson 1_3 por intervalos.Designer.cs">
       <DependentUpon>Formulaio Regla de Simpson 1_3 por intervalos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Biseccion.cs">
+    <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Biseccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Biseccion.Designer.cs">
+    <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Biseccion.Designer.cs">
       <DependentUpon>Formulario Biseccion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario ddf adelante.cs">
@@ -124,10 +124,10 @@
     <Compile Include="Formulario Evaluaciones.Designer.cs">
       <DependentUpon>Formulario Evaluaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Falsa Posición.cs">
+    <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Falsa Posición.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Falsa Posición.Designer.cs">
+    <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Falsa Posición.Designer.cs">
       <DependentUpon>Formulario Falsa Posición.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Gauss.cs">
@@ -166,22 +166,22 @@
     <Compile Include="Formulario Principal.Designer.cs">
       <DependentUpon>Formulario Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Ejercicios.cs">
+    <Compile Include="FormsTema1\Formulario Ejercicios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Ejercicios.Designer.cs">
+    <Compile Include="FormsTema1\Formulario Ejercicios.Designer.cs">
       <DependentUpon>Formulario Ejercicios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Mapa Conceptual.cs">
+    <Compile Include="FormsTema1\Formulario Mapa Conceptual.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Mapa Conceptual.Designer.cs">
+    <Compile Include="FormsTema1\Formulario Mapa Conceptual.Designer.cs">
       <DependentUpon>Formulario Mapa Conceptual.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Métodos Cerrados.cs">
+    <Compile Include="FormsTema2\Formulario Métodos Cerrados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Métodos Cerrados.Designer.cs">
+    <Compile Include="FormsTema2\Formulario Métodos Cerrados.Designer.cs">
       <DependentUpon>Formulario Métodos Cerrados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Problemario T3.cs">
@@ -202,11 +202,11 @@
     <Compile Include="Formulario ProblemarioT2.Designer.cs">
       <DependentUpon>Formulario ProblemarioT2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Problemario_Tema1.cs">
+    <Compile Include="FormsTema1\Formulario Problemario_T1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Problemario_Tema1.Designer.cs">
-      <DependentUpon>Formulario Problemario_Tema1.cs</DependentUpon>
+    <Compile Include="FormsTema1\Formulario Problemario_T1.Designer.cs">
+      <DependentUpon>Formulario Problemario_T1.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Punto Fijo.cs">
       <SubType>Form</SubType>
@@ -272,7 +272,7 @@
     <EmbeddedResource Include="Formulaio Regla de Simpson 1_3 por intervalos.resx">
       <DependentUpon>Formulaio Regla de Simpson 1_3 por intervalos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Biseccion.resx">
+    <EmbeddedResource Include="FormsTema2\FormsMetodosCerrados\Formulario Biseccion.resx">
       <DependentUpon>Formulario Biseccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario ddf adelante.resx">
@@ -290,7 +290,7 @@
     <EmbeddedResource Include="Formulario Evaluaciones.resx">
       <DependentUpon>Formulario Evaluaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Falsa Posición.resx">
+    <EmbeddedResource Include="FormsTema2\FormsMetodosCerrados\Formulario Falsa Posición.resx">
       <DependentUpon>Formulario Falsa Posición.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Gauss.resx">
@@ -311,13 +311,13 @@
     <EmbeddedResource Include="Formulario Principal.resx">
       <DependentUpon>Formulario Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Ejercicios.resx">
+    <EmbeddedResource Include="FormsTema1\Formulario Ejercicios.resx">
       <DependentUpon>Formulario Ejercicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Mapa Conceptual.resx">
+    <EmbeddedResource Include="FormsTema1\Formulario Mapa Conceptual.resx">
       <DependentUpon>Formulario Mapa Conceptual.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Métodos Cerrados.resx">
+    <EmbeddedResource Include="FormsTema2\Formulario Métodos Cerrados.resx">
       <DependentUpon>Formulario Métodos Cerrados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Problemario T3.resx">
@@ -329,8 +329,8 @@
     <EmbeddedResource Include="Formulario ProblemarioT2.resx">
       <DependentUpon>Formulario ProblemarioT2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Problemario_Tema1.resx">
-      <DependentUpon>Formulario Problemario_Tema1.cs</DependentUpon>
+    <EmbeddedResource Include="FormsTema1\Formulario Problemario_T1.resx">
+      <DependentUpon>Formulario Problemario_T1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Punto Fijo.resx">
       <DependentUpon>Formulario Punto Fijo.cs</DependentUpon>
@@ -376,55 +376,55 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Calculadora.png" />
+    <None Include="Recursos\Calculadora.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logo ISC ITSG1.jpg" />
+    <None Include="Recursos\Logo ISC ITSG1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ITSG_LOGO_OFFICIAL.png" />
+    <None Include="Recursos\ITSG_LOGO_OFFICIAL.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ejercicio_Errores1.jpeg" />
+    <None Include="Recursos\Ejercicio_Errores1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Eejercicio1_Tema1.jpeg" />
+    <None Include="Recursos\Eejercicio1_Tema1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ejercicio2_Tema1.jpeg" />
+    <None Include="Recursos\Ejercicio2_Tema1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ejercicio3_Tema1.jpeg" />
+    <None Include="Recursos\Ejercicio3_Tema1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Mapa Conceptual.bmp.bmp" />
+    <None Include="Recursos\Mapa Conceptual.bmp.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PrimerDerivadaSegundaFormula.PNG" />
+    <None Include="Recursos\PrimerDerivadaSegundaFormula.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SegundaDerivadaSegundaFormula.PNG" />
+    <None Include="Recursos\SegundaDerivadaSegundaFormula.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TerceraDerivada.PNG" />
+    <None Include="Recursos\TerceraDerivada.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PrimerDerivadaSegundaFormulaAtras.PNG" />
+    <None Include="Recursos\PrimerDerivadaSegundaFormulaAtras.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SegundaDerivadaSegundaFormulaAtras.PNG" />
+    <None Include="Recursos\SegundaDerivadaSegundaFormulaAtras.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TercerDerivadaSegundaFormulaAtras.PNG" />
+    <None Include="Recursos\TercerDerivadaSegundaFormulaAtras.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PrimeraDerivadaSegundaFormulaCentral.PNG" />
+    <None Include="Recursos\PrimeraDerivadaSegundaFormulaCentral.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SegundaDerivadaSegundaFormulaCentral.PNG" />
+    <None Include="Recursos\SegundaDerivadaSegundaFormulaCentral.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TerceraDerivadaSegundaFormulaCentral.PNG" />
+    <None Include="Recursos\TerceraDerivadaSegundaFormulaCentral.PNG" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -439,29 +439,30 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Evaluacion 1.jpeg" />
+    <None Include="Recursos\Evaluacion 1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Evaluacion2.jpeg" />
+    <None Include="Recursos\Evaluacion2.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Evalacion3.jpeg" />
+    <None Include="Recursos\Evalacion3.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Evaluacion 4.jpeg" />
+    <None Include="Recursos\Evaluacion 4.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\img1.png" />
-    <Content Include="images\img10.png" />
-    <Content Include="images\img11.png" />
-    <Content Include="images\img2.png" />
-    <Content Include="images\img3.png" />
-    <Content Include="images\img4.png" />
-    <Content Include="images\img5.png" />
-    <Content Include="images\img6.png" />
-    <Content Include="images\img7.png" />
-    <Content Include="images\img8.png" />
-    <Content Include="images\img9.png" />
+    <Content Include="Imagenes\img1.png" />
+    <Content Include="Imagenes\img10.png" />
+    <Content Include="Imagenes\img11.png" />
+    <Content Include="Imagenes\img2.png" />
+    <Content Include="Imagenes\img3.png" />
+    <Content Include="Imagenes\img4.png" />
+    <Content Include="Imagenes\img5.png" />
+    <Content Include="Imagenes\img6.png" />
+    <Content Include="Imagenes\img7.png" />
+    <Content Include="Imagenes\img8.png" />
+    <Content Include="Imagenes\img9.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -59,7 +59,7 @@
             // 
             // tb_Ea
             // 
-            this.tb_Ea.Location = new System.Drawing.Point(29, 35);
+            this.tb_Ea.Location = new System.Drawing.Point(12, 35);
             this.tb_Ea.Name = "tb_Ea";
             this.tb_Ea.Size = new System.Drawing.Size(95, 20);
             this.tb_Ea.TabIndex = 27;
@@ -68,7 +68,7 @@
             // 
             // tb_xranterior
             // 
-            this.tb_xranterior.Location = new System.Drawing.Point(29, 64);
+            this.tb_xranterior.Location = new System.Drawing.Point(12, 64);
             this.tb_xranterior.Name = "tb_xranterior";
             this.tb_xranterior.Size = new System.Drawing.Size(95, 20);
             this.tb_xranterior.TabIndex = 26;
@@ -78,7 +78,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(339, 101);
+            this.label5.Location = new System.Drawing.Point(322, 103);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 13);
             this.label5.TabIndex = 25;
@@ -87,7 +87,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(233, 101);
+            this.label4.Location = new System.Drawing.Point(216, 103);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(16, 13);
             this.label4.TabIndex = 24;
@@ -96,7 +96,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(127, 101);
+            this.label3.Location = new System.Drawing.Point(110, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 13);
             this.label3.TabIndex = 23;
@@ -105,7 +105,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 101);
+            this.label2.Location = new System.Drawing.Point(9, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(14, 13);
             this.label2.TabIndex = 22;
@@ -114,7 +114,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(379, 11);
+            this.label1.Location = new System.Drawing.Point(544, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 21;
@@ -122,7 +122,7 @@
             // 
             // tb_FuncionFP
             // 
-            this.tb_FuncionFP.Location = new System.Drawing.Point(301, 27);
+            this.tb_FuncionFP.Location = new System.Drawing.Point(466, 25);
             this.tb_FuncionFP.Multiline = true;
             this.tb_FuncionFP.Name = "tb_FuncionFP";
             this.tb_FuncionFP.Size = new System.Drawing.Size(201, 28);
@@ -132,7 +132,7 @@
             // 
             // btn_Calcular_FalsaPosicion
             // 
-            this.btn_Calcular_FalsaPosicion.Location = new System.Drawing.Point(663, 115);
+            this.btn_Calcular_FalsaPosicion.Location = new System.Drawing.Point(911, 116);
             this.btn_Calcular_FalsaPosicion.Name = "btn_Calcular_FalsaPosicion";
             this.btn_Calcular_FalsaPosicion.Size = new System.Drawing.Size(60, 23);
             this.btn_Calcular_FalsaPosicion.TabIndex = 19;
@@ -142,7 +142,7 @@
             // 
             // tb_Xu
             // 
-            this.tb_Xu.Location = new System.Drawing.Point(347, 117);
+            this.tb_Xu.Location = new System.Drawing.Point(330, 119);
             this.tb_Xu.Name = "tb_Xu";
             this.tb_Xu.Size = new System.Drawing.Size(95, 20);
             this.tb_Xu.TabIndex = 18;
@@ -151,7 +151,7 @@
             // 
             // tb_Xl
             // 
-            this.tb_Xl.Location = new System.Drawing.Point(241, 117);
+            this.tb_Xl.Location = new System.Drawing.Point(224, 119);
             this.tb_Xl.Name = "tb_Xl";
             this.tb_Xl.Size = new System.Drawing.Size(95, 20);
             this.tb_Xl.TabIndex = 17;
@@ -160,7 +160,7 @@
             // 
             // tb_Es
             // 
-            this.tb_Es.Location = new System.Drawing.Point(135, 117);
+            this.tb_Es.Location = new System.Drawing.Point(118, 119);
             this.tb_Es.Name = "tb_Es";
             this.tb_Es.Size = new System.Drawing.Size(95, 20);
             this.tb_Es.TabIndex = 16;
@@ -169,7 +169,7 @@
             // 
             // tb_P
             // 
-            this.tb_P.Location = new System.Drawing.Point(29, 117);
+            this.tb_P.Location = new System.Drawing.Point(12, 119);
             this.tb_P.Name = "tb_P";
             this.tb_P.Size = new System.Drawing.Size(95, 20);
             this.tb_P.TabIndex = 15;
@@ -192,10 +192,10 @@
             this.fxlfxr,
             this.ERP,
             this.Ea});
-            this.dgv_FalsaPosicion.Location = new System.Drawing.Point(24, 144);
+            this.dgv_FalsaPosicion.Location = new System.Drawing.Point(12, 146);
             this.dgv_FalsaPosicion.Name = "dgv_FalsaPosicion";
             this.dgv_FalsaPosicion.RowHeadersVisible = false;
-            this.dgv_FalsaPosicion.Size = new System.Drawing.Size(831, 400);
+            this.dgv_FalsaPosicion.Size = new System.Drawing.Size(1089, 400);
             this.dgv_FalsaPosicion.TabIndex = 28;
             // 
             // i
@@ -250,7 +250,7 @@
             // 
             // btn_Volver
             // 
-            this.btn_Volver.Location = new System.Drawing.Point(795, 115);
+            this.btn_Volver.Location = new System.Drawing.Point(1043, 116);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(60, 23);
             this.btn_Volver.TabIndex = 29;
@@ -260,7 +260,7 @@
             // 
             // btn_Limpiar
             // 
-            this.btn_Limpiar.Location = new System.Drawing.Point(729, 115);
+            this.btn_Limpiar.Location = new System.Drawing.Point(977, 116);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(60, 23);
             this.btn_Limpiar.TabIndex = 30;
@@ -272,7 +272,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 668);
+            this.ClientSize = new System.Drawing.Size(1113, 744);
             this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.btn_Volver);
             this.Controls.Add(this.dgv_FalsaPosicion);

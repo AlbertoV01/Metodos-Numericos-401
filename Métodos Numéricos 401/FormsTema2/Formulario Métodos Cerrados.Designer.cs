@@ -44,10 +44,9 @@
             this.btn_Ejercicio_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ejercicio_3.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Ejercicio_3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Ejercicio_3.Location = new System.Drawing.Point(0, 505);
-            this.btn_Ejercicio_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Ejercicio_3.Location = new System.Drawing.Point(0, 410);
             this.btn_Ejercicio_3.Name = "btn_Ejercicio_3";
-            this.btn_Ejercicio_3.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btn_Ejercicio_3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btn_Ejercicio_3.Size = new System.Drawing.Size(0, 0);
             this.btn_Ejercicio_3.TabIndex = 8;
             this.btn_Ejercicio_3.Text = "EJERCICIO 3";
@@ -61,10 +60,9 @@
             this.btn_Ejercicio_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ejercicio_2.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Ejercicio_2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Ejercicio_2.Location = new System.Drawing.Point(-1, 193);
-            this.btn_Ejercicio_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Ejercicio_2.Location = new System.Drawing.Point(-1, 157);
             this.btn_Ejercicio_2.Name = "btn_Ejercicio_2";
-            this.btn_Ejercicio_2.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btn_Ejercicio_2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btn_Ejercicio_2.Size = new System.Drawing.Size(0, 0);
             this.btn_Ejercicio_2.TabIndex = 7;
             this.btn_Ejercicio_2.Text = "EJERCICIO 2";
@@ -78,10 +76,9 @@
             this.btn_Ejercicio_Tabla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ejercicio_Tabla.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Ejercicio_Tabla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Ejercicio_Tabla.Location = new System.Drawing.Point(3, 0);
-            this.btn_Ejercicio_Tabla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Ejercicio_Tabla.Location = new System.Drawing.Point(2, 0);
             this.btn_Ejercicio_Tabla.Name = "btn_Ejercicio_Tabla";
-            this.btn_Ejercicio_Tabla.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btn_Ejercicio_Tabla.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btn_Ejercicio_Tabla.Size = new System.Drawing.Size(0, 0);
             this.btn_Ejercicio_Tabla.TabIndex = 6;
             this.btn_Ejercicio_Tabla.Text = "MÉTODO DE BISECCIÓN";
@@ -95,11 +92,10 @@
             this.btn_Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Volver.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Volver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Volver.Location = new System.Drawing.Point(-3, 448);
-            this.btn_Volver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Volver.Location = new System.Drawing.Point(-7, 365);
             this.btn_Volver.Name = "btn_Volver";
-            this.btn_Volver.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.btn_Volver.Size = new System.Drawing.Size(116, 49);
+            this.btn_Volver.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_Volver.Size = new System.Drawing.Size(98, 37);
             this.btn_Volver.TabIndex = 7;
             this.btn_Volver.Text = "Volver";
             this.btn_Volver.UseVisualStyleBackColor = false;
@@ -113,10 +109,9 @@
             this.btn_FalsaPosicion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_FalsaPosicion.ForeColor = System.Drawing.Color.LightGray;
             this.btn_FalsaPosicion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_FalsaPosicion.Location = new System.Drawing.Point(-33, 282);
-            this.btn_FalsaPosicion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_FalsaPosicion.Location = new System.Drawing.Point(-7, 210);
             this.btn_FalsaPosicion.Name = "btn_FalsaPosicion";
-            this.btn_FalsaPosicion.Size = new System.Drawing.Size(1217, 43);
+            this.btn_FalsaPosicion.Size = new System.Drawing.Size(1150, 41);
             this.btn_FalsaPosicion.TabIndex = 5;
             this.btn_FalsaPosicion.Text = "FALSA POSICIÓN";
             this.btn_FalsaPosicion.UseVisualStyleBackColor = false;
@@ -130,10 +125,9 @@
             this.btn_Biseccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Biseccion.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Biseccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Biseccion.Location = new System.Drawing.Point(-15, 100);
-            this.btn_Biseccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Biseccion.Location = new System.Drawing.Point(-7, 80);
             this.btn_Biseccion.Name = "btn_Biseccion";
-            this.btn_Biseccion.Size = new System.Drawing.Size(1199, 43);
+            this.btn_Biseccion.Size = new System.Drawing.Size(1150, 38);
             this.btn_Biseccion.TabIndex = 2;
             this.btn_Biseccion.Text = "BISECCIÓN";
             this.btn_Biseccion.UseVisualStyleBackColor = false;
@@ -141,10 +135,10 @@
             // 
             // Formulario_Métodos_Cerrados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1167, 822);
+            this.ClientSize = new System.Drawing.Size(1169, 744);
             this.Controls.Add(this.btn_Volver);
             this.Controls.Add(this.btn_FalsaPosicion);
             this.Controls.Add(this.btn_Ejercicio_3);
@@ -152,8 +146,8 @@
             this.Controls.Add(this.btn_Ejercicio_2);
             this.Controls.Add(this.btn_Ejercicio_Tabla);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Formulario_Métodos_Cerrados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario_Métodos_Cerrados";
             this.ResumeLayout(false);
 

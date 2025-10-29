@@ -41,12 +41,12 @@
             this.btn_Problemario_Tema1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Problemario_Tema1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Problemario_Tema1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Problemario_Tema1.Font = new System.Drawing.Font("Maiandra GD", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Problemario_Tema1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Problemario_Tema1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Problemario_Tema1.Location = new System.Drawing.Point(1, 121);
+            this.btn_Problemario_Tema1.Location = new System.Drawing.Point(-3, 123);
             this.btn_Problemario_Tema1.Name = "btn_Problemario_Tema1";
             this.btn_Problemario_Tema1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_Problemario_Tema1.Size = new System.Drawing.Size(887, 184);
+            this.btn_Problemario_Tema1.Size = new System.Drawing.Size(1174, 154);
             this.btn_Problemario_Tema1.TabIndex = 3;
             this.btn_Problemario_Tema1.Text = "PROBLEMARIO \r\nTEMA 1";
             this.btn_Problemario_Tema1.UseVisualStyleBackColor = false;
@@ -60,7 +60,7 @@
             this.btn_Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Volver.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Volver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Volver.Location = new System.Drawing.Point(-9, 311);
+            this.btn_Volver.Location = new System.Drawing.Point(-3, 320);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btn_Volver.Size = new System.Drawing.Size(87, 40);
@@ -74,7 +74,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(888, 668);
+            this.ClientSize = new System.Drawing.Size(1169, 744);
             this.Controls.Add(this.btn_Volver);
             this.Controls.Add(this.btn_Problemario_Tema1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

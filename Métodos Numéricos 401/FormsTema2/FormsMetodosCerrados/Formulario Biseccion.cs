@@ -20,18 +20,12 @@ namespace Métodos_Numéricos_401
         private void btn_Calcular_Biseccion_Click(object sender, EventArgs e)
         {
             
-            
             if(ValidarTextboxs.CamposVacios(tb_Funcion)||ValidarTextboxs.CamposVacios(tb_P) || ValidarTextboxs.CamposVacios(tb_Es) || ValidarTextboxs.CamposVacios(tb_Xl) || ValidarTextboxs.CamposVacios(tb_Xu))
             {
                 MessageBox.Show("No se admiten campos vacios","e_e",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
            
-            
-         
-           
-           
-
             Double ValorEsperado = 0;
             int i=1;
             do
@@ -42,8 +36,6 @@ namespace Métodos_Numéricos_401
                 // Les pasamos los parámetros al constructor de la clase
 
                 tb_xranterior.Text = Convert.ToString(oBiseccion.CalcularXr()); // TOMA XR ANTERIOR PARA PODER REALIZAR EL ERROR APROXIMADO
-
-
                 dgv_Biseccion.Rows.Add(i,Convert.ToSingle(tb_Xl.Text), Convert.ToSingle(tb_Xu.Text), oBiseccion.CalcularXr(), oBiseccion.Calcularfxl(), 
                     oBiseccion.Calcularfxu(), oBiseccion.Calcularfxr(),oBiseccion.Calcularfxlfxr(),oBiseccion.CalcularERP(), oBiseccion.CalcularEa());
                 // Mandamos llamar los métodos de la clase para que los agregue a un datagridview
