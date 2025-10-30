@@ -71,7 +71,6 @@ namespace Métodos_Numéricos_401
         private void btn_Ejercicios_Click(object sender, EventArgs e)
         {
             //Codigo
-           //AbrirFormulario(new Formulario_Ejercicios_Tema1());
            AbrirFormulario(new Formulario_Ejercicios_Tema1());
             //Codigo  
             OcultarSubMenu();
@@ -79,7 +78,6 @@ namespace Métodos_Numéricos_401
         private void btn_MapaConceptual_Click(object sender, EventArgs e)
         {
             //Codigo
-            //AbrirFormulario(new Formulario_Mapa_Conceptual());
             AbrirFormulario(new Formulario_Mapa_Conceptual());
             //Codigo
             OcultarSubMenu();
@@ -87,35 +85,15 @@ namespace Métodos_Numéricos_401
         private void btn_Problemario_Click(object sender, EventArgs e)
         {
             //Codigo
-            //AbrirFormulario(new Formulario_Problemario_Tema1());
             AbrirFormulario(new Formulario_Problemario_Tema1());
             //Codigo
             OcultarSubMenu();
         }
         private Form FormularioActivo = null;
 
-        //public void AbrirFormulario(Form NuevoFormulario)
-        //{
-        //    if (FormularioActivo != null)
-        //    {
-        //        FormularioActivo.Close();
-        //    }
-        //        FormularioActivo = NuevoFormulario;
-        //        NuevoFormulario.TopLevel = false;
-        //        //NuevoFormulario.FormBorderStyle = FormBorderStyle.None;
-        //        NuevoFormulario.WindowState = FormWindowState.Maximized;
-        //        NuevoFormulario.Dock = DockStyle.Fill;
-
-        //        Controls.Add(NuevoFormulario);
-        //        //pnl_DatosEscolares.Visible=false;
-        //        NuevoFormulario.BringToFront();
-        //        NuevoFormulario.Show();
-                
-        //}
-
         public void AbrirFormulario(Form form)
         {
-            if (FormularioActivo != null
+            if (FormularioActivo != null)
                 FormularioActivo.Dispose();
             
             FormularioActivo = form;
