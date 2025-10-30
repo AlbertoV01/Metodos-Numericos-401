@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
 
 namespace Métodos_Numéricos_401
 {
@@ -104,9 +95,7 @@ namespace Métodos_Numéricos_401
             pnl_Logo_ITSG.Dock = DockStyle.Fill;
             pnl_Logo_ITSG.Controls.Add(form);
             form.BringToFront();
-
         }
-
 
         private void btn_Tema2_Click(object sender, EventArgs e)
         {
