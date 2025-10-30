@@ -162,7 +162,6 @@
             this.tb_Xu.Size = new System.Drawing.Size(100, 20);
             this.tb_Xu.TabIndex = 4;
             this.tb_Xu.Text = "16";
-            this.tb_Xu.Enter += new System.EventHandler(this.tb_Xu_Enter);
             this.tb_Xu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Xu_KeyPress);
             // 
             // btn_Calcular_Biseccion

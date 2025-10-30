@@ -92,9 +92,33 @@ namespace Métodos_Numéricos_401
             //Codigo
             OcultarSubMenu();
         }
+        private Form FormularioActivo = null;
+
+        //public void AbrirFormulario(Form NuevoFormulario)
+        //{
+        //    if (FormularioActivo != null)
+        //    {
+        //        FormularioActivo.Close();
+        //    }
+        //        FormularioActivo = NuevoFormulario;
+        //        NuevoFormulario.TopLevel = false;
+        //        //NuevoFormulario.FormBorderStyle = FormBorderStyle.None;
+        //        NuevoFormulario.WindowState = FormWindowState.Maximized;
+        //        NuevoFormulario.Dock = DockStyle.Fill;
+
+        //        Controls.Add(NuevoFormulario);
+        //        //pnl_DatosEscolares.Visible=false;
+        //        NuevoFormulario.BringToFront();
+        //        NuevoFormulario.Show();
+                
+        //}
 
         public void AbrirFormulario(Form form)
         {
+            if (FormularioActivo != null
+                FormularioActivo.Dispose();
+            
+            FormularioActivo = form;
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
             form.FormBorderStyle = FormBorderStyle.None;
