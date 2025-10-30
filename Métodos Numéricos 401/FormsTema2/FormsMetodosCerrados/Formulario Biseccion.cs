@@ -19,45 +19,60 @@ namespace Métodos_Numéricos_401
         
         private void btn_Calcular_Biseccion_Click(object sender, EventArgs e)
         {
-            
-            if(ValidarTextboxs.CamposVacios(tb_Funcion)||ValidarTextboxs.CamposVacios(tb_P) || ValidarTextboxs.CamposVacios(tb_Es) || ValidarTextboxs.CamposVacios(tb_Xl) || ValidarTextboxs.CamposVacios(tb_Xu))
+
+            if (ValidarTextboxs.CamposVacios(tb_Funcion) ||
+            ValidarTextboxs.CamposVacios(tb_P) ||
+            ValidarTextboxs.CamposVacios(tb_Es) ||
+            ValidarTextboxs.CamposVacios(tb_Xl) ||
+            ValidarTextboxs.CamposVacios(tb_Xu))
             {
-                MessageBox.Show("No se admiten campos vacios","e_e",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("No se admiten campos vacíos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-           
-            Double ValorEsperado = 0;
-            int i=1;
+
+            // Crear una sola instancia de Biseccion
+            var metodo = new Biseccion(
+                Convert.ToSingle(tb_Xl.Text),
+                Convert.ToSingle(tb_Xu.Text),
+                tb_Funcion.Text,
+                Convert.ToSingle(tb_P.Text),
+                Convert.ToSingle(tb_xranterior.Text)
+                
+            );
+
+            dgv_Biseccion.Rows.Clear();
+            int i = 1;
+          
             do
             {
+                
+                metodo.Iterar(); // Aqui se realizan todos los calculos
 
-                Biseccion oBiseccion = new Biseccion(Convert.ToSingle(tb_Xl.Text),Convert.ToSingle(tb_Xu.Text),
-                    tb_Funcion.Text,Convert.ToSingle(tb_P.Text),Convert.ToSingle(tb_xranterior.Text));
-                // Les pasamos los parámetros al constructor de la clase
+                dgv_Biseccion.Rows.Add(
+                    i,
+                    metodo.xl,
+                    metodo.xu,
+                    metodo.xr,
+                    metodo.fxl,
+                    metodo.fxu,
+                    metodo.fxr,
+                    metodo.fxlfxr,
+                    metodo.P,
+                    metodo.Ea
+                );
 
-                tb_xranterior.Text = Convert.ToString(oBiseccion.CalcularXr()); // TOMA XR ANTERIOR PARA PODER REALIZAR EL ERROR APROXIMADO
-                dgv_Biseccion.Rows.Add(i,Convert.ToSingle(tb_Xl.Text), Convert.ToSingle(tb_Xu.Text), oBiseccion.CalcularXr(), oBiseccion.Calcularfxl(), 
-                    oBiseccion.Calcularfxu(), oBiseccion.Calcularfxr(),oBiseccion.Calcularfxlfxr(),oBiseccion.CalcularERP(), oBiseccion.CalcularEa());
-                // Mandamos llamar los métodos de la clase para que los agregue a un datagridview
-                oBiseccion.Algoritmo(); // Mandamos llamar el algoritmo para saber si fxlfxr es mayor a cero y para saber si fxlfxr es menor que cero
+                i++;
 
+            } while (!metodo.Termino(Convert.ToSingle(tb_Es.Text))); // se detiene cuando Ea < Es
 
-                ValorEsperado = Convert.ToDouble(oBiseccion.CalcularEa());
-                tb_Xl.Text = Convert.ToString(oBiseccion.xl);
-                tb_Xu.Text = Convert.ToString(oBiseccion.xu);
-                i=i+1;
+            dgv_Biseccion.Rows[0].Cells[1].Value = tb_Xl.Text;
+            dgv_Biseccion.Rows[0].Cells[2].Value = tb_Xu.Text;
 
-            } while (ValorEsperado >= Convert.ToSingle(tb_Es.Text));  // El ciclo se repetirá mientras el error aproximado sea  mayor o igual que el error esperado                           
         }
 
         private void btn_Volver_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void tb_Xu_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_Limpiar_Click(object sender, EventArgs e)

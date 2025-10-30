@@ -138,7 +138,7 @@
             this.btn_Calcular_FalsaPosicion.TabIndex = 19;
             this.btn_Calcular_FalsaPosicion.Text = "Calcular";
             this.btn_Calcular_FalsaPosicion.UseVisualStyleBackColor = true;
-            this.btn_Calcular_FalsaPosicion.Click += new System.EventHandler(this.btn_Calcular_FalsaPosicion_Click);
+           // this.btn_Calcular_FalsaPosicion.Click += new System.EventHandler(this.btn_Calcular_FalsaPosicion_Click);
             // 
             // tb_Xu
             // 

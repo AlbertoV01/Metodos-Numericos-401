@@ -64,6 +64,9 @@
     <Reference Include="Calculus">
       <HintPath>..\..\..\..\..\Downloads\Calculus.dll</HintPath>
     </Reference>
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <HintPath>..\packages\ncalc.1.3.8\lib\NCalc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,8 +78,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Z.Expressions.Eval, Version=4.0.80.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Z.Expressions.Eval.4.0.80\lib\net45\Z.Expressions.Eval.dll</HintPath>
+    <Reference Include="Z.Expressions.Eval, Version=6.3.2.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Expressions.Eval.6.3.2\lib\net45\Z.Expressions.Eval.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -376,55 +379,55 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Calculadora.png" />
+    <None Include="Resources\Calculadora.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Logo ISC ITSG1.jpg" />
+    <None Include="Resources\Logo ISC ITSG1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\ITSG_LOGO_OFFICIAL.png" />
+    <None Include="Resources\ITSG_LOGO_OFFICIAL.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Ejercicio_Errores1.jpeg" />
+    <None Include="Resources\Ejercicio_Errores1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Eejercicio1_Tema1.jpeg" />
+    <None Include="Resources\Eejercicio1_Tema1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Ejercicio2_Tema1.jpeg" />
+    <None Include="Resources\Ejercicio2_Tema1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Ejercicio3_Tema1.jpeg" />
+    <None Include="Resources\Ejercicio3_Tema1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Mapa Conceptual.bmp.bmp" />
+    <None Include="Resources\Mapa Conceptual.bmp.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\PrimerDerivadaSegundaFormula.PNG" />
+    <None Include="Resources\PrimerDerivadaSegundaFormula.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\SegundaDerivadaSegundaFormula.PNG" />
+    <None Include="Resources\SegundaDerivadaSegundaFormula.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\TerceraDerivada.PNG" />
+    <None Include="Resources\TerceraDerivada.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\PrimerDerivadaSegundaFormulaAtras.PNG" />
+    <None Include="Resources\PrimerDerivadaSegundaFormulaAtras.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\SegundaDerivadaSegundaFormulaAtras.PNG" />
+    <None Include="Resources\SegundaDerivadaSegundaFormulaAtras.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\TercerDerivadaSegundaFormulaAtras.PNG" />
+    <None Include="Resources\TercerDerivadaSegundaFormulaAtras.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\PrimeraDerivadaSegundaFormulaCentral.PNG" />
+    <None Include="Resources\PrimeraDerivadaSegundaFormulaCentral.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\SegundaDerivadaSegundaFormulaCentral.PNG" />
+    <None Include="Resources\SegundaDerivadaSegundaFormulaCentral.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\TerceraDerivadaSegundaFormulaCentral.PNG" />
+    <None Include="Resources\TerceraDerivadaSegundaFormulaCentral.PNG" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -439,29 +442,29 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Evaluacion 1.jpeg" />
+    <None Include="Resources\Evaluacion 1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Evaluacion2.jpeg" />
+    <None Include="Resources\Evaluacion2.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Evalacion3.jpeg" />
+    <None Include="Resources\Evalacion3.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\Evaluacion 4.jpeg" />
+    <None Include="Resources\Evaluacion 4.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Imagenes\img1.png" />
-    <Content Include="Imagenes\img10.png" />
-    <Content Include="Imagenes\img11.png" />
-    <Content Include="Imagenes\img2.png" />
-    <Content Include="Imagenes\img3.png" />
-    <Content Include="Imagenes\img4.png" />
-    <Content Include="Imagenes\img5.png" />
-    <Content Include="Imagenes\img6.png" />
-    <Content Include="Imagenes\img7.png" />
-    <Content Include="Imagenes\img8.png" />
-    <Content Include="Imagenes\img9.png" />
+    <Content Include="Images\img1.png" />
+    <Content Include="Images\img10.png" />
+    <Content Include="Images\img11.png" />
+    <Content Include="Images\img2.png" />
+    <Content Include="Images\img3.png" />
+    <Content Include="Images\img4.png" />
+    <Content Include="Images\img5.png" />
+    <Content Include="Images\img6.png" />
+    <Content Include="Images\img7.png" />
+    <Content Include="Images\img8.png" />
+    <Content Include="Images\img9.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
