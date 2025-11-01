@@ -112,9 +112,9 @@
             this.btn_FalsaPosicion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_FalsaPosicion.ForeColor = System.Drawing.Color.LightGray;
             this.btn_FalsaPosicion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_FalsaPosicion.Location = new System.Drawing.Point(-7, 210);
+            this.btn_FalsaPosicion.Location = new System.Drawing.Point(-7, 212);
             this.btn_FalsaPosicion.Name = "btn_FalsaPosicion";
-            this.btn_FalsaPosicion.Size = new System.Drawing.Size(1150, 41);
+            this.btn_FalsaPosicion.Size = new System.Drawing.Size(1183, 41);
             this.btn_FalsaPosicion.TabIndex = 5;
             this.btn_FalsaPosicion.Text = "FALSA POSICIÓN";
             this.btn_FalsaPosicion.UseVisualStyleBackColor = false;
@@ -133,7 +133,7 @@
             this.btn_Biseccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Biseccion.Location = new System.Drawing.Point(-7, 80);
             this.btn_Biseccion.Name = "btn_Biseccion";
-            this.btn_Biseccion.Size = new System.Drawing.Size(1150, 38);
+            this.btn_Biseccion.Size = new System.Drawing.Size(1183, 38);
             this.btn_Biseccion.TabIndex = 2;
             this.btn_Biseccion.Text = "BISECCIÓN";
             this.btn_Biseccion.UseVisualStyleBackColor = false;

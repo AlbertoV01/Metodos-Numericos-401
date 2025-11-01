@@ -124,19 +124,23 @@ namespace Métodos_Numéricos_401
         private void btn_Gauss_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new Formulario_Gauss());
+            OcultarSubMenu();
         }
        
         private void btn_Jacobi_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new Formulario_Jacobi());
+            OcultarSubMenu();
         }
         private void btn_Gauss_Seidel_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new Gauss_Seidel());
+            OcultarSubMenu();
         }
         private void btn_I_Secuencial_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new  Gauss_Seidel());
+            OcultarSubMenu();
         }
         private void btn_Problemario_T3_Click(object sender, EventArgs e)
         {

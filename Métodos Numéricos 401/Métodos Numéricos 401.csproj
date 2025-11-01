@@ -151,10 +151,10 @@
     <Compile Include="Formulario Iterativo Secuencial.Designer.cs">
       <DependentUpon>Formulario Iterativo Secuencial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Jacobi.cs">
+    <Compile Include="FormsTema3\Formulario Jacobi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Jacobi.Designer.cs">
+    <Compile Include="FormsTema3\Formulario Jacobi.Designer.cs">
       <DependentUpon>Formulario Jacobi.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Métodos Abiertos.cs">
@@ -187,10 +187,10 @@
     <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Métodos Cerrados.Designer.cs">
       <DependentUpon>Formulario Métodos Cerrados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Problemario T3.cs">
+    <Compile Include="FormsTema3\Formulario Problemario T3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Problemario T3.Designer.cs">
+    <Compile Include="FormsTema3\Formulario Problemario T3.Designer.cs">
       <DependentUpon>Formulario Problemario T3.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Problemario T4.cs">
@@ -248,7 +248,7 @@
       <DependentUpon>Gauss-Seidel.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Gauss.cs" />
-    <Compile Include="Jacobi.cs" />
+    <Compile Include="Clases\Jacobi.cs" />
     <Compile Include="FormsTema2\FormsMetodosAbiertos\Netwon-Rhapson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,7 +305,7 @@
     <EmbeddedResource Include="Formulario Iterativo Secuencial.resx">
       <DependentUpon>Formulario Iterativo Secuencial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Jacobi.resx">
+    <EmbeddedResource Include="FormsTema3\Formulario Jacobi.resx">
       <DependentUpon>Formulario Jacobi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema2\FormsMetodosAbiertos\Formulario Métodos Abiertos.resx">
@@ -323,7 +323,7 @@
     <EmbeddedResource Include="FormsTema2\FormsMetodosCerrados\Formulario Métodos Cerrados.resx">
       <DependentUpon>Formulario Métodos Cerrados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Problemario T3.resx">
+    <EmbeddedResource Include="FormsTema3\Formulario Problemario T3.resx">
       <DependentUpon>Formulario Problemario T3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Problemario T4.resx">
