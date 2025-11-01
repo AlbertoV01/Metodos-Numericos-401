@@ -30,7 +30,6 @@ namespace Métodos_Numéricos_401
                 tb_Funcion.Text,
                 Convert.ToSingle(tb_P.Text),
                 Convert.ToSingle(tb_xranterior.Text)
-                
             );
 
             dgv_Biseccion.Rows.Clear();
@@ -38,8 +37,9 @@ namespace Métodos_Numéricos_401
           
             do
             {
-                
-                metodo.Iterar(); // Aqui se realizan todos los calculos
+
+                if (!metodo.Iterar())// Aqui se realizan todos los calculos
+                    return;
 
                 dgv_Biseccion.Rows.Add(
                     i,
@@ -50,7 +50,7 @@ namespace Métodos_Numéricos_401
                     metodo.fxu,
                     metodo.fxr,
                     metodo.fxlfxr,
-                    metodo.P,
+                    metodo.erp,
                     metodo.Ea
                 );
 

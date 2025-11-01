@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
+using System.Windows.Forms;
+using Calculus;
 
 namespace Métodos_Numéricos_401
 {
@@ -16,15 +15,42 @@ namespace Métodos_Numéricos_401
 
         }
 
-  
-
-        public override float CalcularXr() // Aplicamos la sobreescritura del único método que cambia y realizamos las operaciones distintas aquí
+        Calculo analizador = new Calculo();
+        //Sobreescribimos el metodo para ajustar las diferencias
+        public override Boolean Iterar()
         {
-            xr = xu - (fxu * (xl - xu) / (fxl - fxu));
-            return xr;
+
+            try
+            {
+                if (analizador.Sintaxis(funcion, 'x'))
+                {
+                    fxl = Convert.ToSingle(analizador.EvaluaFx(xl));
+                    fxu = Convert.ToSingle(analizador.EvaluaFx(xu));
+                    xr = xu - (fxu * (xl - xu) / (fxl - fxu));
+                    fxr = Convert.ToSingle(analizador.EvaluaFx(xr));
+                }
+                else
+                {
+                    throw new Exception("Error en la función ingresada");
+                }
+
+                fxlfxr = fxl * fxr;
+                erp = Math.Abs(((P - xr) / P) * 100);
+                Ea = Math.Abs(((xr - xranterior) / xr) * 100);
+
+                if (fxlfxr < 0)
+                xu = xr;
+                else if (fxlfxr > 0)
+                xl = xr;
+
+                xranterior = xr;
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return false;
+            }
         }
-
-
-
     }
 }

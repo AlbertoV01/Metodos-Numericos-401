@@ -17,8 +17,8 @@ namespace Métodos_Numéricos_401
         public float Ea { get; set; }
         public float P { get; set; }
         public float xranterior { get; set; }
+        public float erp { get; set; }
         public string funcion { get; set; }
-
         private Calculo analizador = new Calculo();
 
         public Biseccion(float xl, float xu, string funcion, float P, float xranterior)
@@ -30,9 +30,9 @@ namespace Métodos_Numéricos_401
             this.xranterior = xranterior;
         }
 
-        public void Iterar()
+        public virtual Boolean Iterar()
         {
-            xr = CalcularXr();
+            xr = xr = (xl + xu) / 2;
 
             try
             {
@@ -46,21 +46,27 @@ namespace Métodos_Numéricos_401
                 {
                     throw new Exception("Error en la función ingresada");
                 }
+
+                fxlfxr = fxl * fxr;
+
+                erp = Math.Abs(((P - xr) / P) * 100);
+                Ea = Math.Abs(((xr - xranterior) / xr) * 100);
+
+                if (fxlfxr < 0)
+                xu = xr;
+                else if (fxlfxr > 0)
+                xl = xr;
+
+                xranterior = xr;
+
+
+                return true;
             }
             catch (Exception e) {
                 MessageBox.Show(e.Message);
+                return false;
             }
 
-            fxlfxr = fxl * fxr;
-
-            Ea = Math.Abs(((xr - xranterior) / xr) * 100);
-
-            if (fxlfxr < 0)
-                xu = xr;
-            else if (fxlfxr > 0)
-                xl = xr;
-
-            xranterior = xr;
         }
 
         //Verifica si ya se alcanzo el error deseado
@@ -69,11 +75,6 @@ namespace Métodos_Numéricos_401
             return Ea < Es;
         }
 
-        public  virtual float CalcularXr()
-        {
-            xr=(xl + xu) / 2;
-            return xr;
-        }
     }
 }
 

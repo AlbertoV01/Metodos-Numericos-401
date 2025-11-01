@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_FuncionFP = new System.Windows.Forms.TextBox();
+            this.tb_FuncionFp = new System.Windows.Forms.TextBox();
             this.btn_Calcular_FalsaPosicion = new System.Windows.Forms.Button();
             this.tb_Xu = new System.Windows.Forms.TextBox();
             this.tb_Xl = new System.Windows.Forms.TextBox();
@@ -120,15 +120,15 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "FUNCIÓN";
             // 
-            // tb_FuncionFP
+            // tb_FuncionFp
             // 
-            this.tb_FuncionFP.Location = new System.Drawing.Point(466, 25);
-            this.tb_FuncionFP.Multiline = true;
-            this.tb_FuncionFP.Name = "tb_FuncionFP";
-            this.tb_FuncionFP.Size = new System.Drawing.Size(201, 28);
-            this.tb_FuncionFP.TabIndex = 20;
-            this.tb_FuncionFP.Text = "(667.38/x)*(1-EXP(-0.146843*x))-40";
-            this.tb_FuncionFP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_FuncionFp.Location = new System.Drawing.Point(466, 25);
+            this.tb_FuncionFp.Multiline = true;
+            this.tb_FuncionFp.Name = "tb_FuncionFp";
+            this.tb_FuncionFp.Size = new System.Drawing.Size(201, 28);
+            this.tb_FuncionFp.TabIndex = 20;
+            this.tb_FuncionFp.Text = "(667.38/x)*(1-EXP(-0.146843*x))-40";
+            this.tb_FuncionFp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn_Calcular_FalsaPosicion
             // 
@@ -138,7 +138,7 @@
             this.btn_Calcular_FalsaPosicion.TabIndex = 19;
             this.btn_Calcular_FalsaPosicion.Text = "Calcular";
             this.btn_Calcular_FalsaPosicion.UseVisualStyleBackColor = true;
-           // this.btn_Calcular_FalsaPosicion.Click += new System.EventHandler(this.btn_Calcular_FalsaPosicion_Click);
+            this.btn_Calcular_FalsaPosicion.Click += new System.EventHandler(this.btn_Calcular_FalsaPosicion_Click);
             // 
             // tb_Xu
             // 
@@ -174,7 +174,6 @@
             this.tb_P.Size = new System.Drawing.Size(95, 20);
             this.tb_P.TabIndex = 15;
             this.tb_P.Text = "14.7802";
-            this.tb_P.TextChanged += new System.EventHandler(this.tb_P_TextChanged);
             this.tb_P.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_P_KeyPress);
             // 
             // dgv_FalsaPosicion
@@ -283,7 +282,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tb_FuncionFP);
+            this.Controls.Add(this.tb_FuncionFp);
             this.Controls.Add(this.btn_Calcular_FalsaPosicion);
             this.Controls.Add(this.tb_Xu);
             this.Controls.Add(this.tb_Xl);
@@ -308,7 +307,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_FuncionFP;
+        private System.Windows.Forms.TextBox tb_FuncionFp;
         private System.Windows.Forms.Button btn_Calcular_FalsaPosicion;
         private System.Windows.Forms.TextBox tb_Xu;
         private System.Windows.Forms.TextBox tb_Xl;
