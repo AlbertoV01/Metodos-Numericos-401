@@ -59,6 +59,8 @@
             // 
             // dgv_Biseccion
             // 
+            this.dgv_Biseccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Biseccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Biseccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Biseccion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -166,6 +168,7 @@
             // 
             // btn_Calcular_Biseccion
             // 
+            this.btn_Calcular_Biseccion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Calcular_Biseccion.Location = new System.Drawing.Point(894, 114);
             this.btn_Calcular_Biseccion.Name = "btn_Calcular_Biseccion";
             this.btn_Calcular_Biseccion.Size = new System.Drawing.Size(65, 23);
@@ -249,6 +252,7 @@
             // 
             // btn_Limpiar
             // 
+            this.btn_Limpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Limpiar.Location = new System.Drawing.Point(965, 114);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(65, 23);
@@ -259,6 +263,7 @@
             // 
             // btn_Volver
             // 
+            this.btn_Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Volver.Location = new System.Drawing.Point(1036, 115);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(65, 23);

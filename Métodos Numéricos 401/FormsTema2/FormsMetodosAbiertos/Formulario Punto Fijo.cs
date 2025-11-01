@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Métodos_Numéricos_401
@@ -16,42 +9,49 @@ namespace Métodos_Numéricos_401
         {
             InitializeComponent();
         }
-        float i = 0;
         private void btn_Calcular_PuntoFijo_Click(object sender, EventArgs e)
         {
+            int i = 1;
+            dgv_PuntoFijo.Rows.Clear();
             if(ValidarTextboxs.CamposVacios(tb_Es)||ValidarTextboxs.CamposVacios(tb_P)||ValidarTextboxs.CamposVacios(tb_xi)||ValidarTextboxs.CamposVacios(tb_Funcion))
             {
                 MessageBox.Show("No se admieten campos vacios", "u_u", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 return;
             }
-            Double ErrporAproximado = 0;
+
+            Punto_Fijo oPuntoFijo = new Punto_Fijo( Convert.ToSingle(tb_xi.Text), Convert.ToSingle(tb_P.Text), tb_Funcion.Text, Convert.ToSingle(tb_xianterior.Text));
+
             do
             {
-                Punto_Fijo oPuntoFijo = new Punto_Fijo( Convert.ToSingle(tb_xi.Text), Convert.ToSingle(tb_P.Text), tb_Funcion.Text, Convert.ToSingle(tb_xianterior.Text));
-
-                if (i == 0)
+                try
                 {
-                    dgv_PuntoFijo.Rows.Add(i, tb_xi.Text, '?', '?');
+
+                    if (!oPuntoFijo.Iterar())
+                        return;
+
+                    dgv_PuntoFijo.Rows.Add(
+                        i,
+                        oPuntoFijo.xi,
+                        oPuntoFijo.ERP,
+                        oPuntoFijo.Ea
+                        );
+
                     i++;
+
                 }
-                
-                dgv_PuntoFijo.Rows.Add(i, oPuntoFijo.CalcularXi(), oPuntoFijo.CalcularERP(),oPuntoFijo.CalcularEa());
-                tb_xianterior.Text = Convert.ToString(oPuntoFijo.CalcularXi());
-            i++;
-            ErrporAproximado = oPuntoFijo.CalcularEa();
-            } while (ErrporAproximado >= Convert.ToSingle(tb_Es.Text));
+                catch (Exception ex) {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
 
-        }
-
-        private void dgv_PuntoFijo_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            } while (oPuntoFijo.Ea >= Convert.ToSingle(tb_Es.Text));
 
         }
 
         private void btn_Volver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
 
         private void btn_Limpiar_Click(object sender, EventArgs e)

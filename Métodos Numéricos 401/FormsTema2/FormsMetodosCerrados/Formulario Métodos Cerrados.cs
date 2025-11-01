@@ -29,9 +29,7 @@ namespace Métodos_Numéricos_401
             NuevoFormulario.Dock = DockStyle.Fill;
             Controls.Add(NuevoFormulario);
             NuevoFormulario.BringToFront();
-            NuevoFormulario.Show();
-            
-            
+            NuevoFormulario.Show();             
         }
         private void btn_Biseccion_Click(object sender, EventArgs e)
         {

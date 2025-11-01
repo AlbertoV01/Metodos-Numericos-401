@@ -47,14 +47,12 @@
             this.erp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
-            this.tb_Derivada = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Netwon)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_xianterior
             // 
-            this.tb_xianterior.Location = new System.Drawing.Point(24, 25);
+            this.tb_xianterior.Location = new System.Drawing.Point(15, 25);
             this.tb_xianterior.Name = "tb_xianterior";
             this.tb_xianterior.Size = new System.Drawing.Size(100, 20);
             this.tb_xianterior.TabIndex = 31;
@@ -63,7 +61,8 @@
             // 
             // btn_Volver
             // 
-            this.btn_Volver.Location = new System.Drawing.Point(744, 131);
+            this.btn_Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Volver.Location = new System.Drawing.Point(1001, 130);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(100, 23);
             this.btn_Volver.TabIndex = 30;
@@ -73,7 +72,8 @@
             // 
             // btn_Limpiar
             // 
-            this.btn_Limpiar.Location = new System.Drawing.Point(638, 131);
+            this.btn_Limpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Limpiar.Location = new System.Drawing.Point(895, 130);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(100, 23);
             this.btn_Limpiar.TabIndex = 29;
@@ -83,7 +83,8 @@
             // 
             // btn_Calcular_Netwon
             // 
-            this.btn_Calcular_Netwon.Location = new System.Drawing.Point(532, 131);
+            this.btn_Calcular_Netwon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Calcular_Netwon.Location = new System.Drawing.Point(789, 130);
             this.btn_Calcular_Netwon.Name = "btn_Calcular_Netwon";
             this.btn_Calcular_Netwon.Size = new System.Drawing.Size(100, 23);
             this.btn_Calcular_Netwon.TabIndex = 28;
@@ -94,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(233, 117);
+            this.label4.Location = new System.Drawing.Point(227, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(14, 13);
             this.label4.TabIndex = 27;
@@ -103,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(124, 117);
+            this.label3.Location = new System.Drawing.Point(118, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 13);
             this.label3.TabIndex = 26;
@@ -112,7 +113,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(342, 9);
+            this.label1.Location = new System.Drawing.Point(530, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 25;
@@ -120,7 +121,7 @@
             // 
             // tb_P
             // 
-            this.tb_P.Location = new System.Drawing.Point(233, 133);
+            this.tb_P.Location = new System.Drawing.Point(227, 131);
             this.tb_P.Name = "tb_P";
             this.tb_P.Size = new System.Drawing.Size(100, 20);
             this.tb_P.TabIndex = 24;
@@ -129,7 +130,7 @@
             // 
             // tb_Es
             // 
-            this.tb_Es.Location = new System.Drawing.Point(127, 133);
+            this.tb_Es.Location = new System.Drawing.Point(121, 131);
             this.tb_Es.Name = "tb_Es";
             this.tb_Es.Size = new System.Drawing.Size(100, 20);
             this.tb_Es.TabIndex = 23;
@@ -138,7 +139,7 @@
             // 
             // tb_Funcion
             // 
-            this.tb_Funcion.Location = new System.Drawing.Point(277, 25);
+            this.tb_Funcion.Location = new System.Drawing.Point(438, 25);
             this.tb_Funcion.Name = "tb_Funcion";
             this.tb_Funcion.Size = new System.Drawing.Size(232, 20);
             this.tb_Funcion.TabIndex = 22;
@@ -147,7 +148,7 @@
             // 
             // tb_xi
             // 
-            this.tb_xi.Location = new System.Drawing.Point(21, 133);
+            this.tb_xi.Location = new System.Drawing.Point(15, 131);
             this.tb_xi.Name = "tb_xi";
             this.tb_xi.Size = new System.Drawing.Size(100, 20);
             this.tb_xi.TabIndex = 21;
@@ -156,6 +157,8 @@
             // 
             // dgv_Netwon
             // 
+            this.dgv_Netwon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Netwon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Netwon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Netwon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -165,11 +168,11 @@
             this.fxi11,
             this.erp,
             this.ea});
-            this.dgv_Netwon.Location = new System.Drawing.Point(12, 159);
+            this.dgv_Netwon.Location = new System.Drawing.Point(12, 160);
             this.dgv_Netwon.Name = "dgv_Netwon";
             this.dgv_Netwon.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgv_Netwon.RowHeadersVisible = false;
-            this.dgv_Netwon.Size = new System.Drawing.Size(832, 331);
+            this.dgv_Netwon.Size = new System.Drawing.Size(1089, 331);
             this.dgv_Netwon.TabIndex = 20;
             // 
             // iteracion
@@ -205,36 +208,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 117);
+            this.label2.Location = new System.Drawing.Point(12, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 32;
             this.label2.Text = "xi+1";
             // 
-            // tb_Derivada
-            // 
-            this.tb_Derivada.Location = new System.Drawing.Point(515, 25);
-            this.tb_Derivada.Name = "tb_Derivada";
-            this.tb_Derivada.Size = new System.Drawing.Size(100, 20);
-            this.tb_Derivada.TabIndex = 33;
-            this.tb_Derivada.Text = "-EXP(-X)-1";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(512, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "DERIVADA";
-            // 
             // Netwon_Rhapson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 668);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.tb_Derivada);
+            this.ClientSize = new System.Drawing.Size(1113, 744);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_xianterior);
             this.Controls.Add(this.btn_Volver);
@@ -278,7 +262,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn erp;
         private System.Windows.Forms.DataGridViewTextBoxColumn ea;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tb_Derivada;
-        private System.Windows.Forms.Label label5;
     }
 }

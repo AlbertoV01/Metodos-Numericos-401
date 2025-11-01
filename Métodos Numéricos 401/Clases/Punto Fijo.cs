@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Calculus;
 
 namespace Métodos_Numéricos_401
@@ -15,7 +16,6 @@ namespace Métodos_Numéricos_401
             this.P = P;
             this.funcion = funcion;
             this.xianterior = xianterior;
-           
         }
 
         Calculo AnalizadorDeFunciones = new Calculo();
@@ -24,9 +24,27 @@ namespace Métodos_Numéricos_401
         public float P { get; set; }
         public string funcion { get; set; }
       
-        private float ERP { get; set; }
-        private float Ea {get;set;}
+        public float ERP { get; set; }
+        public float Ea {get;set;}
         public float xianterior { get; set; }
+
+
+        public Boolean Iterar()
+        {
+            try
+            {
+                CalcularXi();
+                CalcularERP();
+                CalcularEa();
+                xianterior = xi;
+                return true;
+            }
+            catch (Exception ex)
+            { 
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
 
         public float CalcularXi()
         {
@@ -37,7 +55,7 @@ namespace Métodos_Numéricos_401
             }
             else
             {
-
+                throw new Exception("Error en la función ingresada");
             }
             return xi;
         }
@@ -52,7 +70,5 @@ namespace Métodos_Numéricos_401
             Ea = Math.Abs((xi - xianterior) / xi)*100;
             return Ea;
         }
-
-
     }
 }

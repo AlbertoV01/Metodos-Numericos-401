@@ -66,7 +66,6 @@ namespace Métodos_Numéricos_401
                 MessageBox.Show(e.Message);
                 return false;
             }
-
         }
 
         //Verifica si ya se alcanzo el error deseado

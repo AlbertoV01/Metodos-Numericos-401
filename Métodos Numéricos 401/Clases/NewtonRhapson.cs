@@ -1,26 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calculus;
 namespace Métodos_Numéricos_401
 {
     public class NewtonRhapson
     {
-        public NewtonRhapson(string funcion, float ximas1, string funcionderivada, float p) 
+        public NewtonRhapson(string funcion, float ximas1, float p) 
         {
             this.funcion = funcion;
             this.ximas1 = ximas1;
-            this.funcionderivada=funcionderivada; 
             this.p = p;
         }
-
-        //public NetwonRhapson(float xianterior)
-        //{
-        //    this.xianterior = xianterior;
-
-        //}
 
         public string funcion;
         public string funcionderivada;
@@ -33,9 +22,28 @@ namespace Métodos_Numéricos_401
         private float p;
         public float xianterior;
 
-        Calculo AnalizadorDeFunciones = new Calculo();
+        readonly Calculo AnalizadorDeFunciones = new Calculo();
 
-       public float CalcularXi()
+        public string error = "e";
+
+        public void Iterar()
+        {
+            try
+            {
+                CalcularXi();
+                Calcularfxi();
+                Calcularfxiderivada();
+                CalcularERP();
+                CalcularEa();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Error en la función ingresada");
+            }
+        }
+
+        
+        public float CalcularXi()
         {
             if(extra==0)
             {
@@ -50,24 +58,20 @@ namespace Métodos_Numéricos_401
         public float Calcularfxi()
         {
             if (AnalizadorDeFunciones.Sintaxis(funcion,'x'))
-            {
                 fximas1 = Convert.ToSingle(AnalizadorDeFunciones.EvaluaFx(ximas1));
-            }
             else
-            {
-            }
-            return fximas1;      
+                error="Ingresa la función correctamente";    
+            
+            return fximas1;
         }
 
         public float Calcularfxiderivada()
         {
-            if (AnalizadorDeFunciones.Sintaxis(funcionderivada, 'x'))
-            {
-                derivadafxmas1 = Convert.ToSingle(AnalizadorDeFunciones.EvaluaFx(ximas1));
-            }
+            if (AnalizadorDeFunciones.Sintaxis(funcion, 'x'))
+                derivadafxmas1 = Convert.ToSingle(AnalizadorDeFunciones.Dx(ximas1));
             else
-            {
-            }
+                error = "Ingresa la función correctamente";
+
             return derivadafxmas1;
         }
 
@@ -77,11 +81,11 @@ namespace Métodos_Numéricos_401
             return erp;
         }
         
-        public float CalcularEa(float xianterior)
+        public float CalcularEa()
         {
             ea = Math.Abs((ximas1 - xianterior) / ximas1) * 100;
             return ea;
         }
 
-}
-    } 
+    }
+} 

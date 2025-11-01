@@ -103,6 +103,9 @@
             // 
             // btn_FalsaPosicion
             // 
+            this.btn_FalsaPosicion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_FalsaPosicion.BackColor = System.Drawing.Color.Black;
             this.btn_FalsaPosicion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_FalsaPosicion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
@@ -119,6 +122,9 @@
             // 
             // btn_Biseccion
             // 
+            this.btn_Biseccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Biseccion.BackColor = System.Drawing.Color.Black;
             this.btn_Biseccion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Biseccion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;

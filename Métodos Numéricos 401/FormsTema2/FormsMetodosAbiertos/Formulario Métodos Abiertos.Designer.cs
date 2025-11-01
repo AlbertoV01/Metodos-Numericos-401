@@ -36,15 +36,18 @@
             // 
             // btn_Netwon
             // 
+            this.btn_Netwon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Netwon.BackColor = System.Drawing.Color.Black;
             this.btn_Netwon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Netwon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Netwon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Netwon.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Netwon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Netwon.Location = new System.Drawing.Point(-2, 171);
+            this.btn_Netwon.Location = new System.Drawing.Point(-11, 161);
             this.btn_Netwon.Name = "btn_Netwon";
-            this.btn_Netwon.Size = new System.Drawing.Size(874, 35);
+            this.btn_Netwon.Size = new System.Drawing.Size(1143, 40);
             this.btn_Netwon.TabIndex = 7;
             this.btn_Netwon.Text = "NEWTON - RHAPSON";
             this.btn_Netwon.UseVisualStyleBackColor = false;
@@ -52,15 +55,18 @@
             // 
             // btn_PuntoFijo
             // 
+            this.btn_PuntoFijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_PuntoFijo.BackColor = System.Drawing.Color.Black;
             this.btn_PuntoFijo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_PuntoFijo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_PuntoFijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_PuntoFijo.ForeColor = System.Drawing.Color.LightGray;
             this.btn_PuntoFijo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_PuntoFijo.Location = new System.Drawing.Point(-2, 51);
+            this.btn_PuntoFijo.Location = new System.Drawing.Point(-11, 76);
             this.btn_PuntoFijo.Name = "btn_PuntoFijo";
-            this.btn_PuntoFijo.Size = new System.Drawing.Size(874, 35);
+            this.btn_PuntoFijo.Size = new System.Drawing.Size(1143, 34);
             this.btn_PuntoFijo.TabIndex = 6;
             this.btn_PuntoFijo.Text = "ITERACIÓN SIMPLE DE PUNTO FIJO";
             this.btn_PuntoFijo.UseVisualStyleBackColor = false;
@@ -85,15 +91,18 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.LightGray;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-2, 284);
+            this.button1.Location = new System.Drawing.Point(-11, 263);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(874, 35);
+            this.button1.Size = new System.Drawing.Size(1143, 40);
             this.button1.TabIndex = 8;
             this.button1.Text = "SECANTE";
             this.button1.UseVisualStyleBackColor = false;
@@ -104,12 +113,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1097, 705);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_PuntoFijo);
             this.Controls.Add(this.btn_Netwon);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Métodos_Abiertos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario_Métodos_Abiertos";
             this.ResumeLayout(false);
 

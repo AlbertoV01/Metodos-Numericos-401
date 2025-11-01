@@ -16,7 +16,7 @@ namespace Métodos_Numéricos_401
         {
             InitializeComponent();
         }
-        private Form FormularioActivo = null;
+        Form FormularioActivo = null;
         private void AbrirFormulario(Form NuevoFormulario)
         {
             if (FormularioActivo != null)
@@ -26,12 +26,8 @@ namespace Métodos_Numéricos_401
             FormularioActivo = NuevoFormulario;
             NuevoFormulario.TopLevel = false;
             NuevoFormulario.FormBorderStyle = FormBorderStyle.None;
-            //NuevoFormulario.Size = new System.Drawing.Size(709, 529);
-           // NuevoFormulario.Dock = DockStyle.Fill;
-            //pnl_MetodosAbiertos.Controls.Add(NuevoFormulario);
-            
+            NuevoFormulario.Dock = DockStyle.Fill;
             Controls.Add(NuevoFormulario);
-
             NuevoFormulario.BringToFront();
             NuevoFormulario.Show();
         }
@@ -47,7 +43,7 @@ namespace Métodos_Numéricos_401
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Secante());
+            AbrirFormulario(new Formulario_Secante());
         }
 
         private void button2_Click(object sender, EventArgs e)

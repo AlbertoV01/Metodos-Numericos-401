@@ -50,7 +50,7 @@
             this.btn_Agregar_Ecuacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Agregar_Ecuacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Agregar_Ecuacion.ForeColor = System.Drawing.Color.White;
-            this.btn_Agregar_Ecuacion.Location = new System.Drawing.Point(613, 12);
+            this.btn_Agregar_Ecuacion.Location = new System.Drawing.Point(838, 12);
             this.btn_Agregar_Ecuacion.Name = "btn_Agregar_Ecuacion";
             this.btn_Agregar_Ecuacion.Size = new System.Drawing.Size(247, 23);
             this.btn_Agregar_Ecuacion.TabIndex = 0;
@@ -67,7 +67,7 @@
             "2x2",
             "3x3",
             "4x4"});
-            this.cb_Orden_Matriz.Location = new System.Drawing.Point(613, 41);
+            this.cb_Orden_Matriz.Location = new System.Drawing.Point(838, 41);
             this.cb_Orden_Matriz.Name = "cb_Orden_Matriz";
             this.cb_Orden_Matriz.Size = new System.Drawing.Size(247, 21);
             this.cb_Orden_Matriz.TabIndex = 1;
@@ -78,7 +78,7 @@
             this.btn_Calcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Calcular.ForeColor = System.Drawing.Color.White;
-            this.btn_Calcular.Location = new System.Drawing.Point(613, 68);
+            this.btn_Calcular.Location = new System.Drawing.Point(838, 68);
             this.btn_Calcular.Name = "btn_Calcular";
             this.btn_Calcular.Size = new System.Drawing.Size(247, 23);
             this.btn_Calcular.TabIndex = 2;
@@ -92,7 +92,7 @@
             this.btn_Limpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Limpiar.ForeColor = System.Drawing.Color.White;
-            this.btn_Limpiar.Location = new System.Drawing.Point(613, 97);
+            this.btn_Limpiar.Location = new System.Drawing.Point(838, 97);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(247, 23);
             this.btn_Limpiar.TabIndex = 4;
@@ -124,7 +124,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_MatrizOriginal.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_MatrizOriginal.Location = new System.Drawing.Point(613, 262);
+            this.dgv_MatrizOriginal.Location = new System.Drawing.Point(838, 262);
             this.dgv_MatrizOriginal.Name = "dgv_MatrizOriginal";
             this.dgv_MatrizOriginal.ReadOnly = true;
             this.dgv_MatrizOriginal.RowHeadersVisible = false;
@@ -137,7 +137,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(673, 243);
+            this.label1.Location = new System.Drawing.Point(898, 243);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 16);
             this.label1.TabIndex = 7;
@@ -162,7 +162,7 @@
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.listBox1.ForeColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(613, 132);
+            this.listBox1.Location = new System.Drawing.Point(838, 132);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(247, 108);
             this.listBox1.TabIndex = 9;
@@ -176,7 +176,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1097, 705);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.label1);
@@ -185,7 +185,7 @@
             this.Controls.Add(this.btn_Calcular);
             this.Controls.Add(this.cb_Orden_Matriz);
             this.Controls.Add(this.btn_Agregar_Ecuacion);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Gauss";
             this.Text = "Formulario_Gauss";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_MatrizOriginal)).EndInit();

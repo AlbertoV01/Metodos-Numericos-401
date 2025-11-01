@@ -113,6 +113,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(544, 9);
             this.label1.Name = "label1";
@@ -122,6 +123,7 @@
             // 
             // tb_FuncionFp
             // 
+            this.tb_FuncionFp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb_FuncionFp.Location = new System.Drawing.Point(466, 25);
             this.tb_FuncionFp.Multiline = true;
             this.tb_FuncionFp.Name = "tb_FuncionFp";
@@ -132,6 +134,7 @@
             // 
             // btn_Calcular_FalsaPosicion
             // 
+            this.btn_Calcular_FalsaPosicion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Calcular_FalsaPosicion.Location = new System.Drawing.Point(911, 116);
             this.btn_Calcular_FalsaPosicion.Name = "btn_Calcular_FalsaPosicion";
             this.btn_Calcular_FalsaPosicion.Size = new System.Drawing.Size(60, 23);
@@ -178,6 +181,8 @@
             // 
             // dgv_FalsaPosicion
             // 
+            this.dgv_FalsaPosicion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_FalsaPosicion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_FalsaPosicion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_FalsaPosicion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -249,6 +254,7 @@
             // 
             // btn_Volver
             // 
+            this.btn_Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Volver.Location = new System.Drawing.Point(1043, 116);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(60, 23);
@@ -259,6 +265,7 @@
             // 
             // btn_Limpiar
             // 
+            this.btn_Limpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Limpiar.Location = new System.Drawing.Point(977, 116);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(60, 23);

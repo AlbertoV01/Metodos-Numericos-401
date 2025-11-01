@@ -1,6 +1,6 @@
 ﻿namespace Métodos_Numéricos_401
 {
-    partial class Secante
+    partial class Formulario_Secante
     {
         /// <summary>
         /// Required designer variable.
@@ -64,7 +64,7 @@
             // 
             // tb_xianterior
             // 
-            this.tb_xianterior.Location = new System.Drawing.Point(253, 21);
+            this.tb_xianterior.Location = new System.Drawing.Point(352, 25);
             this.tb_xianterior.Name = "tb_xianterior";
             this.tb_xianterior.Size = new System.Drawing.Size(100, 20);
             this.tb_xianterior.TabIndex = 46;
@@ -73,7 +73,8 @@
             // 
             // btn_Volver
             // 
-            this.btn_Volver.Location = new System.Drawing.Point(760, 74);
+            this.btn_Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Volver.Location = new System.Drawing.Point(985, 74);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(100, 23);
             this.btn_Volver.TabIndex = 45;
@@ -83,7 +84,8 @@
             // 
             // btn_Limpiar
             // 
-            this.btn_Limpiar.Location = new System.Drawing.Point(760, 103);
+            this.btn_Limpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Limpiar.Location = new System.Drawing.Point(985, 103);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(100, 23);
             this.btn_Limpiar.TabIndex = 44;
@@ -93,7 +95,8 @@
             // 
             // btn_Calcular_Secante
             // 
-            this.btn_Calcular_Secante.Location = new System.Drawing.Point(760, 132);
+            this.btn_Calcular_Secante.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Calcular_Secante.Location = new System.Drawing.Point(985, 132);
             this.btn_Calcular_Secante.Name = "btn_Calcular_Secante";
             this.btn_Calcular_Secante.Size = new System.Drawing.Size(100, 23);
             this.btn_Calcular_Secante.TabIndex = 43;
@@ -122,7 +125,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(424, 5);
+            this.label1.Location = new System.Drawing.Point(547, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 40;
@@ -148,7 +151,7 @@
             // 
             // tb_Funcion
             // 
-            this.tb_Funcion.Location = new System.Drawing.Point(359, 21);
+            this.tb_Funcion.Location = new System.Drawing.Point(458, 25);
             this.tb_Funcion.Name = "tb_Funcion";
             this.tb_Funcion.Size = new System.Drawing.Size(232, 20);
             this.tb_Funcion.TabIndex = 37;
@@ -166,6 +169,8 @@
             // 
             // dgv_Secante
             // 
+            this.dgv_Secante.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Secante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Secante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Secante.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -176,11 +181,11 @@
             this.fxi11,
             this.erp,
             this.ea});
-            this.dgv_Secante.Location = new System.Drawing.Point(12, 179);
+            this.dgv_Secante.Location = new System.Drawing.Point(12, 178);
             this.dgv_Secante.Name = "dgv_Secante";
             this.dgv_Secante.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgv_Secante.RowHeadersVisible = false;
-            this.dgv_Secante.Size = new System.Drawing.Size(848, 236);
+            this.dgv_Secante.Size = new System.Drawing.Size(1073, 236);
             this.dgv_Secante.TabIndex = 35;
             // 
             // iteracion
@@ -234,14 +239,13 @@
             this.tb_xi.Size = new System.Drawing.Size(100, 20);
             this.tb_xi.TabIndex = 48;
             this.tb_xi.Text = "1.5";
-            this.tb_xi.TextChanged += new System.EventHandler(this.tb_xi_TextChanged);
             this.tb_xi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_xi_KeyPress);
             // 
-            // Secante
+            // Formulario_Secante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1097, 705);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tb_xi);
             this.Controls.Add(this.label2);
@@ -257,7 +261,9 @@
             this.Controls.Add(this.tb_Funcion);
             this.Controls.Add(this.tb_ximenos1);
             this.Controls.Add(this.dgv_Secante);
-            this.Name = "Secante";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Formulario_Secante";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secante";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Secante)).EndInit();
             this.ResumeLayout(false);

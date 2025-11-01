@@ -50,6 +50,8 @@
             // 
             // dgv_PuntoFijo
             // 
+            this.dgv_PuntoFijo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_PuntoFijo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_PuntoFijo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgv_PuntoFijo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -58,13 +60,12 @@
             this.xi,
             this.erp,
             this.ea});
-            this.dgv_PuntoFijo.Location = new System.Drawing.Point(12, 126);
+            this.dgv_PuntoFijo.Location = new System.Drawing.Point(15, 126);
             this.dgv_PuntoFijo.Name = "dgv_PuntoFijo";
             this.dgv_PuntoFijo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgv_PuntoFijo.RowHeadersVisible = false;
-            this.dgv_PuntoFijo.Size = new System.Drawing.Size(837, 330);
+            this.dgv_PuntoFijo.Size = new System.Drawing.Size(1070, 330);
             this.dgv_PuntoFijo.TabIndex = 0;
-            this.dgv_PuntoFijo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_PuntoFijo_CellContentClick);
             // 
             // iteracion
             // 
@@ -88,7 +89,7 @@
             // 
             // tb_xi
             // 
-            this.tb_xi.Location = new System.Drawing.Point(12, 97);
+            this.tb_xi.Location = new System.Drawing.Point(15, 97);
             this.tb_xi.Name = "tb_xi";
             this.tb_xi.Size = new System.Drawing.Size(100, 20);
             this.tb_xi.TabIndex = 1;
@@ -97,7 +98,7 @@
             // 
             // tb_Funcion
             // 
-            this.tb_Funcion.Location = new System.Drawing.Point(343, 25);
+            this.tb_Funcion.Location = new System.Drawing.Point(451, 25);
             this.tb_Funcion.Name = "tb_Funcion";
             this.tb_Funcion.Size = new System.Drawing.Size(232, 20);
             this.tb_Funcion.TabIndex = 2;
@@ -106,7 +107,7 @@
             // 
             // tb_Es
             // 
-            this.tb_Es.Location = new System.Drawing.Point(118, 97);
+            this.tb_Es.Location = new System.Drawing.Point(121, 97);
             this.tb_Es.Name = "tb_Es";
             this.tb_Es.Size = new System.Drawing.Size(100, 20);
             this.tb_Es.TabIndex = 3;
@@ -115,7 +116,7 @@
             // 
             // tb_P
             // 
-            this.tb_P.Location = new System.Drawing.Point(224, 97);
+            this.tb_P.Location = new System.Drawing.Point(227, 97);
             this.tb_P.Name = "tb_P";
             this.tb_P.Size = new System.Drawing.Size(100, 20);
             this.tb_P.TabIndex = 4;
@@ -125,7 +126,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(432, 9);
+            this.label1.Location = new System.Drawing.Point(540, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 5;
@@ -134,7 +135,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 81);
+            this.label2.Location = new System.Drawing.Point(15, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 6;
@@ -143,7 +144,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 81);
+            this.label3.Location = new System.Drawing.Point(118, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 13);
             this.label3.TabIndex = 7;
@@ -152,7 +153,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(224, 81);
+            this.label4.Location = new System.Drawing.Point(227, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(14, 13);
             this.label4.TabIndex = 8;
@@ -160,7 +161,9 @@
             // 
             // btn_Volver
             // 
-            this.btn_Volver.Location = new System.Drawing.Point(784, 97);
+            this.btn_Volver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Volver.Location = new System.Drawing.Point(1018, 97);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(65, 23);
             this.btn_Volver.TabIndex = 18;
@@ -170,7 +173,9 @@
             // 
             // btn_Limpiar
             // 
-            this.btn_Limpiar.Location = new System.Drawing.Point(713, 97);
+            this.btn_Limpiar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Limpiar.Location = new System.Drawing.Point(947, 97);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(65, 23);
             this.btn_Limpiar.TabIndex = 17;
@@ -180,7 +185,9 @@
             // 
             // btn_Calcular_PuntoFijo
             // 
-            this.btn_Calcular_PuntoFijo.Location = new System.Drawing.Point(642, 97);
+            this.btn_Calcular_PuntoFijo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Calcular_PuntoFijo.Location = new System.Drawing.Point(876, 97);
             this.btn_Calcular_PuntoFijo.Name = "btn_Calcular_PuntoFijo";
             this.btn_Calcular_PuntoFijo.Size = new System.Drawing.Size(65, 23);
             this.btn_Calcular_PuntoFijo.TabIndex = 16;
@@ -201,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1097, 705);
             this.Controls.Add(this.tb_xianterior);
             this.Controls.Add(this.btn_Volver);
             this.Controls.Add(this.btn_Limpiar);
@@ -215,6 +222,7 @@
             this.Controls.Add(this.tb_Funcion);
             this.Controls.Add(this.tb_xi);
             this.Controls.Add(this.dgv_PuntoFijo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Punto_Fijo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario_Punto_Fijo";

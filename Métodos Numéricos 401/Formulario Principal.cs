@@ -84,8 +84,7 @@ namespace Métodos_Numéricos_401
 
         public void AbrirFormulario(Form form)
         {
-            if (FormularioActivo != null)
-                FormularioActivo.Dispose();
+            FormularioActivo?.Dispose();
             
             FormularioActivo = form;
             form.TopLevel = false;

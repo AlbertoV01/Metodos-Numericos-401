@@ -500,6 +500,7 @@
             // 
             // pnl_DatosEscolares
             // 
+            this.pnl_DatosEscolares.AutoScroll = true;
             this.pnl_DatosEscolares.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.pnl_DatosEscolares.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_DatosEscolares.Controls.Add(this.btn_Adv);
@@ -669,8 +670,8 @@
             this.ClientSize = new System.Drawing.Size(1578, 844);
             this.Controls.Add(this.pnl_Logo_ITSG);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pnl_DatosEscolares);
             this.Controls.Add(this.pnl_TemasIzq);
+            this.Controls.Add(this.pnl_DatosEscolares);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Principal";

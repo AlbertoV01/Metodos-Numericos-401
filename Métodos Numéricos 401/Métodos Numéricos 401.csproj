@@ -133,10 +133,10 @@
     <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Falsa Posición.Designer.cs">
       <DependentUpon>Formulario Falsa Posición.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Gauss.cs">
+    <Compile Include="FormsTema3\Formulario Gauss.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Gauss.Designer.cs">
+    <Compile Include="FormsTema3\Formulario Gauss.Designer.cs">
       <DependentUpon>Formulario Gauss.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Integracion Numerica.cs">
@@ -157,10 +157,10 @@
     <Compile Include="Formulario Jacobi.Designer.cs">
       <DependentUpon>Formulario Jacobi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Métodos Abiertos.cs">
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Métodos Abiertos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Métodos Abiertos.Designer.cs">
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Métodos Abiertos.Designer.cs">
       <DependentUpon>Formulario Métodos Abiertos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Principal.cs">
@@ -181,10 +181,10 @@
     <Compile Include="FormsTema1\Formulario Mapa Conceptual.Designer.cs">
       <DependentUpon>Formulario Mapa Conceptual.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsTema2\Formulario Métodos Cerrados.cs">
+    <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Métodos Cerrados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsTema2\Formulario Métodos Cerrados.Designer.cs">
+    <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Métodos Cerrados.Designer.cs">
       <DependentUpon>Formulario Métodos Cerrados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Problemario T3.cs">
@@ -199,10 +199,10 @@
     <Compile Include="Formulario Problemario T4.Designer.cs">
       <DependentUpon>Formulario Problemario T4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario ProblemarioT2.cs">
+    <Compile Include="FormsTema2\Formulario ProblemarioT2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario ProblemarioT2.Designer.cs">
+    <Compile Include="FormsTema2\Formulario ProblemarioT2.Designer.cs">
       <DependentUpon>Formulario ProblemarioT2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsTema1\Formulario Problemario_T1.cs">
@@ -211,10 +211,10 @@
     <Compile Include="FormsTema1\Formulario Problemario_T1.Designer.cs">
       <DependentUpon>Formulario Problemario_T1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Punto Fijo.cs">
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Punto Fijo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Punto Fijo.Designer.cs">
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Punto Fijo.Designer.cs">
       <DependentUpon>Formulario Punto Fijo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Regla de Simpson 1_3.cs">
@@ -247,15 +247,15 @@
     <Compile Include="Gauss-Seidel.Designer.cs">
       <DependentUpon>Gauss-Seidel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gauss.cs" />
+    <Compile Include="Clases\Gauss.cs" />
     <Compile Include="Jacobi.cs" />
-    <Compile Include="Netwon-Rhapson.cs">
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Netwon-Rhapson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Netwon-Rhapson.Designer.cs">
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Netwon-Rhapson.Designer.cs">
       <DependentUpon>Netwon-Rhapson.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewtonRhapson.cs" />
+    <Compile Include="Clases\NewtonRhapson.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -263,14 +263,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Punto Fijo.cs" />
-    <Compile Include="Formulario Secante.cs">
+    <Compile Include="Clases\Punto Fijo.cs" />
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Secante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Secante.Designer.cs">
+    <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Secante.Designer.cs">
       <DependentUpon>Formulario Secante.cs</DependentUpon>
     </Compile>
-    <Compile Include="secante.cs" />
+    <Compile Include="Clases\Secante.cs" />
     <Compile Include="ValidarTextboxs.cs" />
     <EmbeddedResource Include="Formulaio Regla de Simpson 1_3 por intervalos.resx">
       <DependentUpon>Formulaio Regla de Simpson 1_3 por intervalos.cs</DependentUpon>
@@ -296,7 +296,7 @@
     <EmbeddedResource Include="FormsTema2\FormsMetodosCerrados\Formulario Falsa Posición.resx">
       <DependentUpon>Formulario Falsa Posición.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Gauss.resx">
+    <EmbeddedResource Include="FormsTema3\Formulario Gauss.resx">
       <DependentUpon>Formulario Gauss.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Integracion Numerica.resx">
@@ -308,7 +308,7 @@
     <EmbeddedResource Include="Formulario Jacobi.resx">
       <DependentUpon>Formulario Jacobi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Métodos Abiertos.resx">
+    <EmbeddedResource Include="FormsTema2\FormsMetodosAbiertos\Formulario Métodos Abiertos.resx">
       <DependentUpon>Formulario Métodos Abiertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Principal.resx">
@@ -320,7 +320,7 @@
     <EmbeddedResource Include="FormsTema1\Formulario Mapa Conceptual.resx">
       <DependentUpon>Formulario Mapa Conceptual.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsTema2\Formulario Métodos Cerrados.resx">
+    <EmbeddedResource Include="FormsTema2\FormsMetodosCerrados\Formulario Métodos Cerrados.resx">
       <DependentUpon>Formulario Métodos Cerrados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Problemario T3.resx">
@@ -329,13 +329,13 @@
     <EmbeddedResource Include="Formulario Problemario T4.resx">
       <DependentUpon>Formulario Problemario T4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario ProblemarioT2.resx">
+    <EmbeddedResource Include="FormsTema2\Formulario ProblemarioT2.resx">
       <DependentUpon>Formulario ProblemarioT2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema1\Formulario Problemario_T1.resx">
       <DependentUpon>Formulario Problemario_T1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Punto Fijo.resx">
+    <EmbeddedResource Include="FormsTema2\FormsMetodosAbiertos\Formulario Punto Fijo.resx">
       <DependentUpon>Formulario Punto Fijo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Regla de Simpson 1_3.resx">
@@ -353,7 +353,7 @@
     <EmbeddedResource Include="Gauss-Seidel.resx">
       <DependentUpon>Gauss-Seidel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Netwon-Rhapson.resx">
+    <EmbeddedResource Include="FormsTema2\FormsMetodosAbiertos\Netwon-Rhapson.resx">
       <DependentUpon>Netwon-Rhapson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -361,7 +361,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Secante.resx">
+    <EmbeddedResource Include="FormsTema2\FormsMetodosAbiertos\Formulario Secante.resx">
       <DependentUpon>Formulario Secante.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
