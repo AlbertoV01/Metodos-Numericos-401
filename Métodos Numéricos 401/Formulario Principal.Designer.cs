@@ -239,7 +239,7 @@
             this.btn_Gauss_Seidel.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btn_Gauss_Seidel.Size = new System.Drawing.Size(214, 40);
             this.btn_Gauss_Seidel.TabIndex = 3;
-            this.btn_Gauss_Seidel.Text = "MÉTODO GAUSS SEIDEL";
+            this.btn_Gauss_Seidel.Text = "MÉTODO G. SEIDEL";
             this.btn_Gauss_Seidel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Gauss_Seidel.UseVisualStyleBackColor = true;
             this.btn_Gauss_Seidel.Click += new System.EventHandler(this.btn_Gauss_Seidel_Click);

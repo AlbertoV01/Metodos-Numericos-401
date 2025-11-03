@@ -68,9 +68,12 @@ namespace Métodos_Numéricos_401
         }
         private void btn_Calcular_Click(object sender, EventArgs e)
         {
-            if (ValidarTextboxs.CamposVacios(tb_ErrorEsperado)||ValidarTextboxs.CamposVacios(tb_ValorInicial)||cb_Ecuaciones.Text=="")
+
+            try
+            { 
+            if (ValidarTextboxs.CamposVacios(tb_ErrorEsperado) || ValidarTextboxs.CamposVacios(tb_ValorInicial) || cb_Ecuaciones.Text == "")
             {
-                MessageBox.Show("No se ademite campos vacios",":I",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             List<string> NombreColumnas = new List<string>();
@@ -96,6 +99,13 @@ namespace Métodos_Numéricos_401
                             //LISTA EN LA QUE SE ALMACENAN LAS ECUACIONES INGRESADAS
                             sEcuaciones.Add(dgv_Ecuaciones.Rows[i].Cells[a].Value.ToString());
                             sEcuacionesAuxiliar.Add(dgv_Ecuaciones.Rows[i].Cells[a].Value.ToString());
+                               if( dgv_Ecuaciones.Rows[i].Cells[a].Value.ToString() == "")
+                                {
+                                    MessageBox.Show("No ingreses campos vacios de ecuaciones");
+                                    return;
+                                }
+
+
                         }
                     }
                     catch (Exception ex)
@@ -108,16 +118,16 @@ namespace Métodos_Numéricos_401
             // variables para dividir el calculo de los errores y de las variables
             int columnasDivididas = dgv_Resultados.Columns.Count;
             int columnas = dgv_Resultados.Columns.Count / 2;
-            int columnasextra= dgv_Resultados.Columns.Count / 2; 
+            int columnasextra = dgv_Resultados.Columns.Count / 2;
             // variables usadas para los ciclos
             int cicloerrores = dgv_Resultados.Columns.Count / 2;
             //listas
             List<double> ResultadosVariableI0 = new List<double>();
             List<string> NuevasEcuaciones = new List<string>();
             List<string> VariablesGuardadas = new List<string>();
-            List<double>Errores=new List<double>();
+            List<double> Errores = new List<double>();
             NuevasEcuaciones = sEcuaciones;
-            double result = 0;        
+            double result = 0;
             //CICLO DONDE LAS VARIABLES INGRESADAS SE REMPLAZAN POR EL VALOR INICIAL
             for (int i = 0; i < sEcuaciones.Count; i++)
             {
@@ -136,10 +146,10 @@ namespace Métodos_Numéricos_401
                 result = Eval.Execute<double>(NuevasEcuaciones[i]);
                 dgv_Resultados.Rows[0].Cells[i].Value = result;
                 dgv_Resultados.Rows[0].Cells[columnas].Value = 100;
-                
+
                 columnas++;
             }
-              sEcuaciones = sEcuacionesAuxiliar;
+            sEcuaciones = sEcuacionesAuxiliar;
             //    //CICLO DONDE SE REALIZARÁ TODO EL PROCEDIMIENTO TOMANDO LOS VALORES DE LA FILA 0 DEL DATAGRIDVIEW
             int gokussj1 = 0;
             int gokussj2 = 1;
@@ -150,9 +160,9 @@ namespace Métodos_Numéricos_401
             {
                 dgv_Resultados.Rows.Add();
                 NuevasEcuaciones.Clear();
-                for (int i=0;i<sEcuacionesAuxiliar.Count;i++)
+                for (int i = 0; i < sEcuacionesAuxiliar.Count; i++)
                 {
-                    NuevasEcuaciones.Add (sEcuacionesAuxiliar[i]);
+                    NuevasEcuaciones.Add(sEcuacionesAuxiliar[i]);
                 }
                 var x = string.Empty;
                 for (int i = 0; i < sEcuacionesAuxiliar.Count; i++)
@@ -164,8 +174,8 @@ namespace Métodos_Numéricos_401
                             x = dgv_Resultados.Rows[gokussj1].Cells[i].Value.ToString();
                         }
 
-                        if(sEcuaciones[j-1].Contains(NombreColumnas[i]))
-                        NuevasEcuaciones[j - 1] = NuevasEcuaciones[j - 1].Replace(NombreColumnas[i], $"({x})");
+                        if (sEcuaciones[j - 1].Contains(NombreColumnas[i]))
+                            NuevasEcuaciones[j - 1] = NuevasEcuaciones[j - 1].Replace(NombreColumnas[i], $"({x})");
                     }
                 }
                 //Se reinicia el valor de la variable de columnas a como estaba al inicio
@@ -174,22 +184,25 @@ namespace Métodos_Numéricos_401
                 for (int i = 0; i < sEcuaciones.Count; i++)
                 {
                     result = Eval.Execute<double>(NuevasEcuaciones[i]);
-                    dgv_Resultados.Rows[gokussj2].Cells[i].Value = result;              
+                    dgv_Resultados.Rows[gokussj2].Cells[i].Value = result;
                 }
                 Errores.Clear();
                 //CICLO DONDE SE CACLULARA LOS ERRORES
-                for (int i = 0;i<sEcuaciones.Count;i++)
+                for (int i = 0; i < sEcuaciones.Count; i++)
                 {
                     xractual = Convert.ToDouble(dgv_Resultados.Rows[gokussj2].Cells[i].Value);
                     xranterior = Convert.ToDouble(dgv_Resultados.Rows[gokussj2 - 1].Cells[i].Value);
                     dgv_Resultados.Rows[gokussj2].Cells[columnas].Value = Math.Abs(((xractual - xranterior) / xractual) * 100);
                     Errores.Add(((xractual - xranterior) / xractual) * 100);
                     columnas++;
-                }                        
+                }
                 gokussj1++;
                 gokussj2++;
-                iteraciones++;               
-            } while ((dgv_Resultados.ColumnCount / 2 != Errores.Where(a => a <= double.Parse(tb_ErrorEsperado.Text)).ToList().Count)); 
+                iteraciones++;
+            } while ((dgv_Resultados.ColumnCount / 2 != Errores.Where(a => a <= double.Parse(tb_ErrorEsperado.Text)).ToList().Count));
+            }catch(Z.Expressions.Compiler.Shared.EvalException ex) {
+                MessageBox.Show("Ingresa las ecuaciones de forma correcta");
+            }
         }
         private void tb_ValorInicial_KeyPress(object sender, KeyPressEventArgs e)
         {

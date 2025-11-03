@@ -298,7 +298,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1081, 666);
             this.Controls.Add(this.dgv_Resultados);
             this.Controls.Add(this.dgv_Ecuaciones);
             this.Controls.Add(this.btn_nota);
@@ -312,6 +312,7 @@
             this.Controls.Add(this.btn_Volver);
             this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.btn_Calcular);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Gauss_Seidel";
             this.Text = "Gauss_Seidel";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ecuaciones)).EndInit();
