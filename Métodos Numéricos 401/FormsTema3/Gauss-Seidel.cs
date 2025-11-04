@@ -54,6 +54,7 @@ namespace Métodos_Numéricos_401
         }
         private void btn_Calcular_Click(object sender, EventArgs e)
         {
+            dgv_Resultados.Rows.Clear();
             if (ValidarTextboxs.CamposVacios(tb_ErrorEsperado) || ValidarTextboxs.CamposVacios(tb_ValorInicial) || cb_Ecuaciones.Text == "")
             {
                 MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -101,15 +102,28 @@ namespace Métodos_Numéricos_401
             double xranterior = 0;
             // instanciamos un objeto que nos ayudara a realizar los calculos
             var values = new Dictionary<string, object>();
+
+
             //CICLO GENERAL DONDE SE REALIZA TODO EL PROCEDIMIENTO
+
             do
             {
+                
+                try
+                { 
                 dgv_Resultados.Rows.Add();
                 //CONDICION QUE SE EJECUTA SOLO CUANDO LA CONDICION DE LA ITERACION SE CUMPLA
                 if (iteracion == 0) {for (int i = 0; i < NombreColumnas.Count; i++) {NombreColumnas[i] = NombreColumnas[i].ToUpper();values.Add(NombreColumnas[i], Convert.ToDouble(tb_ValorInicial.Text));}}         
                 //CICLO DONDE SE CALCULA LOS RESULTADOS EVALUANDO LA ECUACION YA DESPEJADA
                 Resultados.Clear();
-                for (int i = 0; i < sEcuaciones.Count; i++){sEcuaciones[i] = sEcuaciones[i].ToUpper();Resultados.Add(Eval.Execute<double>(sEcuaciones[i], values));values[NombreColumnas[i]] = Resultados[i];}
+
+                    for (int i = 0; i < sEcuaciones.Count; i++)
+                    {
+                        if (sEcuaciones[i] == "") return;
+                        sEcuaciones[i] = sEcuaciones[i].ToUpper();
+                        Resultados.Add(Eval.Execute<double>(sEcuaciones[i], values));
+                        values[NombreColumnas[i]] = Resultados[i];
+                    }
 
                 for (int i = 0; i < Resultados.Count; i++){dgv_Resultados.Rows[iteracion].Cells[i].Value = Resultados[i];}
                 columnas= dgv_Resultados.Columns.Count / 2;
@@ -138,6 +152,19 @@ namespace Métodos_Numéricos_401
                         columnas++;
                     }              
                 }
+
+                }
+                catch(Z.Expressions.Compiler.Shared.EvalException)
+                {
+                    MessageBox.Show("Ingresa las ecuaciones correctamente");
+                    return;
+                }
+                catch (System.InvalidOperationException)
+                {
+                    MessageBox.Show("Primero agrega las ecuaciones");
+                    return;
+                }
+
                 gokussj1++;
                 gokussj2++;
                 iteracion++;

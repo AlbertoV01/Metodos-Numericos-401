@@ -36,6 +36,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button1.BackColor = System.Drawing.SystemColors.ControlText;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -50,48 +51,42 @@
             // 
             // btn_ReporteT2
             // 
-            this.btn_ReporteT2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_ReporteT2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ReporteT2.BackColor = System.Drawing.SystemColors.ControlText;
             this.btn_ReporteT2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_ReporteT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ReporteT2.ForeColor = System.Drawing.Color.White;
-            this.btn_ReporteT2.Location = new System.Drawing.Point(0, 336);
+            this.btn_ReporteT2.Location = new System.Drawing.Point(12, 316);
             this.btn_ReporteT2.Name = "btn_ReporteT2";
-            this.btn_ReporteT2.Size = new System.Drawing.Size(883, 66);
+            this.btn_ReporteT2.Size = new System.Drawing.Size(1057, 103);
             this.btn_ReporteT2.TabIndex = 10;
             this.btn_ReporteT2.Text = "REPORTE";
             this.btn_ReporteT2.UseVisualStyleBackColor = false;
             // 
             // btn_ExcelT2
             // 
-            this.btn_ExcelT2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_ExcelT2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ExcelT2.BackColor = System.Drawing.SystemColors.ControlText;
             this.btn_ExcelT2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_ExcelT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ExcelT2.ForeColor = System.Drawing.Color.White;
-            this.btn_ExcelT2.Location = new System.Drawing.Point(0, 240);
+            this.btn_ExcelT2.Location = new System.Drawing.Point(12, 204);
             this.btn_ExcelT2.Name = "btn_ExcelT2";
-            this.btn_ExcelT2.Size = new System.Drawing.Size(883, 69);
+            this.btn_ExcelT2.Size = new System.Drawing.Size(1057, 106);
             this.btn_ExcelT2.TabIndex = 9;
             this.btn_ExcelT2.Text = "EXCEL";
             this.btn_ExcelT2.UseVisualStyleBackColor = false;
             // 
             // btn_Ejercicios_T2
             // 
-            this.btn_Ejercicios_T2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Ejercicios_T2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Ejercicios_T2.BackColor = System.Drawing.SystemColors.ControlText;
             this.btn_Ejercicios_T2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_Ejercicios_T2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ejercicios_T2.ForeColor = System.Drawing.Color.White;
-            this.btn_Ejercicios_T2.Location = new System.Drawing.Point(0, 150);
+            this.btn_Ejercicios_T2.Location = new System.Drawing.Point(12, 90);
             this.btn_Ejercicios_T2.Name = "btn_Ejercicios_T2";
-            this.btn_Ejercicios_T2.Size = new System.Drawing.Size(883, 71);
+            this.btn_Ejercicios_T2.Size = new System.Drawing.Size(1057, 108);
             this.btn_Ejercicios_T2.TabIndex = 8;
             this.btn_Ejercicios_T2.Text = "PROBLEMARIO";
             this.btn_Ejercicios_T2.UseVisualStyleBackColor = false;
@@ -102,12 +97,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1081, 666);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_ReporteT2);
             this.Controls.Add(this.btn_ExcelT2);
             this.Controls.Add(this.btn_Ejercicios_T2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Problemario_T4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario_Problemario_T4";
             this.ResumeLayout(false);
 

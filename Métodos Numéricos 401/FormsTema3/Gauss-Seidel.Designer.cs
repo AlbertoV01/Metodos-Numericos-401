@@ -60,7 +60,7 @@
             this.btn_nota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_nota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_nota.ForeColor = System.Drawing.Color.White;
-            this.btn_nota.Location = new System.Drawing.Point(783, 12);
+            this.btn_nota.Location = new System.Drawing.Point(992, 12);
             this.btn_nota.Name = "btn_nota";
             this.btn_nota.Size = new System.Drawing.Size(75, 23);
             this.btn_nota.TabIndex = 26;
@@ -72,7 +72,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(782, 81);
+            this.label3.Location = new System.Drawing.Point(991, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 13);
             this.label3.TabIndex = 25;
@@ -80,7 +80,7 @@
             // 
             // tb_ErrorEsperado
             // 
-            this.tb_ErrorEsperado.Location = new System.Drawing.Point(785, 97);
+            this.tb_ErrorEsperado.Location = new System.Drawing.Point(994, 97);
             this.tb_ErrorEsperado.Name = "tb_ErrorEsperado";
             this.tb_ErrorEsperado.Size = new System.Drawing.Size(72, 20);
             this.tb_ErrorEsperado.TabIndex = 24;
@@ -90,7 +90,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(782, 42);
+            this.label2.Location = new System.Drawing.Point(991, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 23;
@@ -98,7 +98,7 @@
             // 
             // tb_ValorInicial
             // 
-            this.tb_ValorInicial.Location = new System.Drawing.Point(785, 58);
+            this.tb_ValorInicial.Location = new System.Drawing.Point(994, 58);
             this.tb_ValorInicial.Name = "tb_ValorInicial";
             this.tb_ValorInicial.Size = new System.Drawing.Size(72, 20);
             this.tb_ValorInicial.TabIndex = 22;
@@ -110,7 +110,7 @@
             this.btn_Aceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Aceptar.ForeColor = System.Drawing.Color.White;
-            this.btn_Aceptar.Location = new System.Drawing.Point(785, 163);
+            this.btn_Aceptar.Location = new System.Drawing.Point(994, 163);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(72, 48);
             this.btn_Aceptar.TabIndex = 21;
@@ -122,7 +122,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(780, 120);
+            this.label1.Location = new System.Drawing.Point(989, 120);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 20;
@@ -142,7 +142,7 @@
             "8",
             "9",
             "10"});
-            this.cb_Ecuaciones.Location = new System.Drawing.Point(785, 136);
+            this.cb_Ecuaciones.Location = new System.Drawing.Point(994, 136);
             this.cb_Ecuaciones.Name = "cb_Ecuaciones";
             this.cb_Ecuaciones.Size = new System.Drawing.Size(71, 21);
             this.cb_Ecuaciones.TabIndex = 19;
@@ -154,7 +154,7 @@
             this.btn_Volver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Volver.ForeColor = System.Drawing.Color.White;
-            this.btn_Volver.Location = new System.Drawing.Point(789, 350);
+            this.btn_Volver.Location = new System.Drawing.Point(998, 350);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(71, 23);
             this.btn_Volver.TabIndex = 18;
@@ -168,7 +168,7 @@
             this.btn_Limpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Limpiar.ForeColor = System.Drawing.Color.White;
-            this.btn_Limpiar.Location = new System.Drawing.Point(789, 321);
+            this.btn_Limpiar.Location = new System.Drawing.Point(998, 321);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(71, 23);
             this.btn_Limpiar.TabIndex = 17;
@@ -182,7 +182,7 @@
             this.btn_Calcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Calcular.ForeColor = System.Drawing.Color.White;
-            this.btn_Calcular.Location = new System.Drawing.Point(785, 217);
+            this.btn_Calcular.Location = new System.Drawing.Point(994, 217);
             this.btn_Calcular.Name = "btn_Calcular";
             this.btn_Calcular.Size = new System.Drawing.Size(75, 23);
             this.btn_Calcular.TabIndex = 16;
@@ -232,7 +232,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_Ecuaciones.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Ecuaciones.RowHeadersVisible = false;
-            this.dgv_Ecuaciones.Size = new System.Drawing.Size(760, 273);
+            this.dgv_Ecuaciones.Size = new System.Drawing.Size(971, 273);
             this.dgv_Ecuaciones.TabIndex = 27;
             // 
             // a
@@ -290,7 +290,7 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Red;
             this.dgv_Resultados.RowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgv_Resultados.Size = new System.Drawing.Size(760, 251);
+            this.dgv_Resultados.Size = new System.Drawing.Size(960, 251);
             this.dgv_Resultados.TabIndex = 28;
             // 
             // Gauss_Seidel

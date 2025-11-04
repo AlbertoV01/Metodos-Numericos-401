@@ -68,7 +68,7 @@
             this.tb_Funcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_Funcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_Funcion.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_Funcion.Location = new System.Drawing.Point(118, 31);
+            this.tb_Funcion.Location = new System.Drawing.Point(221, 31);
             this.tb_Funcion.Name = "tb_Funcion";
             this.tb_Funcion.Size = new System.Drawing.Size(355, 20);
             this.tb_Funcion.TabIndex = 0;
@@ -81,7 +81,7 @@
             this.tb_xi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_xi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_xi.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_xi.Location = new System.Drawing.Point(12, 80);
+            this.tb_xi.Location = new System.Drawing.Point(12, 43);
             this.tb_xi.Name = "tb_xi";
             this.tb_xi.Size = new System.Drawing.Size(100, 20);
             this.tb_xi.TabIndex = 1;
@@ -93,7 +93,7 @@
             this.tb_h.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_h.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_h.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_h.Location = new System.Drawing.Point(12, 127);
+            this.tb_h.Location = new System.Drawing.Point(12, 90);
             this.tb_h.Name = "tb_h";
             this.tb_h.Size = new System.Drawing.Size(100, 20);
             this.tb_h.TabIndex = 2;
@@ -105,7 +105,7 @@
             this.tb_valorverdadero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_valorverdadero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_valorverdadero.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_valorverdadero.Location = new System.Drawing.Point(12, 176);
+            this.tb_valorverdadero.Location = new System.Drawing.Point(12, 139);
             this.tb_valorverdadero.Name = "tb_valorverdadero";
             this.tb_valorverdadero.Size = new System.Drawing.Size(100, 20);
             this.tb_valorverdadero.TabIndex = 3;
@@ -116,7 +116,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(270, 9);
+            this.label1.Location = new System.Drawing.Point(377, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 4;
@@ -128,7 +128,7 @@
             this.checkBox_PrimeraDerivada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.checkBox_PrimeraDerivada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox_PrimeraDerivada.ForeColor = System.Drawing.Color.LightGray;
-            this.checkBox_PrimeraDerivada.Location = new System.Drawing.Point(485, 65);
+            this.checkBox_PrimeraDerivada.Location = new System.Drawing.Point(678, 65);
             this.checkBox_PrimeraDerivada.Name = "checkBox_PrimeraDerivada";
             this.checkBox_PrimeraDerivada.Size = new System.Drawing.Size(106, 30);
             this.checkBox_PrimeraDerivada.TabIndex = 7;
@@ -142,7 +142,7 @@
             this.checkBoxSegundaDerivada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.checkBoxSegundaDerivada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBoxSegundaDerivada.ForeColor = System.Drawing.Color.LightGray;
-            this.checkBoxSegundaDerivada.Location = new System.Drawing.Point(479, 152);
+            this.checkBoxSegundaDerivada.Location = new System.Drawing.Point(672, 152);
             this.checkBoxSegundaDerivada.Name = "checkBoxSegundaDerivada";
             this.checkBoxSegundaDerivada.Size = new System.Drawing.Size(112, 30);
             this.checkBoxSegundaDerivada.TabIndex = 8;
@@ -154,7 +154,7 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::Métodos_Numéricos_401.Properties.Resources.TerceraDerivada;
-            this.pictureBox3.Location = new System.Drawing.Point(600, 235);
+            this.pictureBox3.Location = new System.Drawing.Point(793, 235);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(260, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -165,7 +165,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::Métodos_Numéricos_401.Properties.Resources.SegundaDerivadaSegundaFormula;
-            this.pictureBox2.Location = new System.Drawing.Point(600, 142);
+            this.pictureBox2.Location = new System.Drawing.Point(793, 142);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(260, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,7 +176,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Métodos_Numéricos_401.Properties.Resources.PrimerDerivadaSegundaFormula;
-            this.pictureBox1.Location = new System.Drawing.Point(600, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(793, 60);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +189,7 @@
             this.checkBoxTerceraDerivada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.checkBoxTerceraDerivada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBoxTerceraDerivada.ForeColor = System.Drawing.Color.LightGray;
-            this.checkBoxTerceraDerivada.Location = new System.Drawing.Point(485, 245);
+            this.checkBoxTerceraDerivada.Location = new System.Drawing.Point(678, 245);
             this.checkBoxTerceraDerivada.Name = "checkBoxTerceraDerivada";
             this.checkBoxTerceraDerivada.Size = new System.Drawing.Size(106, 30);
             this.checkBoxTerceraDerivada.TabIndex = 10;
@@ -201,7 +201,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(23, 58);
+            this.label2.Location = new System.Drawing.Point(23, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 13);
             this.label2.TabIndex = 11;
@@ -211,7 +211,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(23, 105);
+            this.label3.Location = new System.Drawing.Point(23, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(13, 13);
             this.label3.TabIndex = 12;
@@ -221,7 +221,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(12, 160);
+            this.label4.Location = new System.Drawing.Point(12, 123);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 13);
             this.label4.TabIndex = 13;
@@ -231,7 +231,7 @@
             // 
             this.btn_Calcular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.btn_Calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Calcular.Location = new System.Drawing.Point(15, 215);
+            this.btn_Calcular.Location = new System.Drawing.Point(15, 178);
             this.btn_Calcular.Name = "btn_Calcular";
             this.btn_Calcular.Size = new System.Drawing.Size(97, 23);
             this.btn_Calcular.TabIndex = 14;
@@ -283,7 +283,7 @@
             this.dgv_ecuacionSustituida.RowHeadersVisible = false;
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gray;
             this.dgv_ecuacionSustituida.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_ecuacionSustituida.Size = new System.Drawing.Size(355, 228);
+            this.dgv_ecuacionSustituida.Size = new System.Drawing.Size(548, 228);
             this.dgv_ecuacionSustituida.TabIndex = 15;
             // 
             // a
@@ -297,7 +297,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightGray;
-            this.label5.Location = new System.Drawing.Point(20, 326);
+            this.label5.Location = new System.Drawing.Point(20, 289);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(146, 33);
             this.label5.TabIndex = 16;
@@ -308,7 +308,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightGray;
-            this.label6.Location = new System.Drawing.Point(479, 326);
+            this.label6.Location = new System.Drawing.Point(672, 326);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(341, 33);
             this.label6.TabIndex = 17;
@@ -318,7 +318,7 @@
             // 
             this.label_Resultado.AutoSize = true;
             this.label_Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Resultado.Location = new System.Drawing.Point(20, 387);
+            this.label_Resultado.Location = new System.Drawing.Point(20, 350);
             this.label_Resultado.Name = "label_Resultado";
             this.label_Resultado.Size = new System.Drawing.Size(0, 33);
             this.label_Resultado.TabIndex = 18;
@@ -336,7 +336,7 @@
             // 
             this.btn_Limpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.btn_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Limpiar.Location = new System.Drawing.Point(15, 252);
+            this.btn_Limpiar.Location = new System.Drawing.Point(15, 215);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(97, 23);
             this.btn_Limpiar.TabIndex = 20;
@@ -348,7 +348,7 @@
             // 
             this.btn_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Salir.Location = new System.Drawing.Point(15, 291);
+            this.btn_Salir.Location = new System.Drawing.Point(15, 254);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(97, 23);
             this.btn_Salir.TabIndex = 21;
@@ -361,7 +361,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.LightSalmon;
-            this.label7.Location = new System.Drawing.Point(492, 25);
+            this.label7.Location = new System.Drawing.Point(685, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(359, 24);
             this.label7.TabIndex = 66;
@@ -372,7 +372,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1065, 627);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Limpiar);
@@ -397,6 +397,7 @@
             this.Controls.Add(this.tb_xi);
             this.Controls.Add(this.tb_Funcion);
             this.ForeColor = System.Drawing.Color.LightSalmon;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_ddf_adelante";
             this.Text = "Formulario_ddf_adelante";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

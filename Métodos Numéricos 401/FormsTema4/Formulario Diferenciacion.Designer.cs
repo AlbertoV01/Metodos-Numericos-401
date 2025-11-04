@@ -36,16 +36,17 @@
             // 
             // btn_Salir
             // 
+            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Salir.BackColor = System.Drawing.Color.Black;
             this.btn_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.LightGray;
             this.btn_Salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Salir.Location = new System.Drawing.Point(-1, 462);
+            this.btn_Salir.Location = new System.Drawing.Point(-1, 481);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Salir.Size = new System.Drawing.Size(105, 35);
+            this.btn_Salir.Size = new System.Drawing.Size(314, 35);
             this.btn_Salir.TabIndex = 13;
             this.btn_Salir.Text = "VOLVER";
             this.btn_Salir.UseVisualStyleBackColor = false;
@@ -53,15 +54,16 @@
             // 
             // btn_ddfcentrales
             // 
+            this.btn_ddfcentrales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ddfcentrales.BackColor = System.Drawing.Color.Black;
             this.btn_ddfcentrales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_ddfcentrales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_ddfcentrales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ddfcentrales.ForeColor = System.Drawing.Color.LightGray;
             this.btn_ddfcentrales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ddfcentrales.Location = new System.Drawing.Point(-1, 297);
+            this.btn_ddfcentrales.Location = new System.Drawing.Point(-1, 316);
             this.btn_ddfcentrales.Name = "btn_ddfcentrales";
-            this.btn_ddfcentrales.Size = new System.Drawing.Size(874, 35);
+            this.btn_ddfcentrales.Size = new System.Drawing.Size(1083, 35);
             this.btn_ddfcentrales.TabIndex = 12;
             this.btn_ddfcentrales.Text = "DIFERENCIAS DIVIDIDAS FINITAS CENTRALES";
             this.btn_ddfcentrales.UseVisualStyleBackColor = false;
@@ -69,15 +71,16 @@
             // 
             // btn_ddfadelante
             // 
+            this.btn_ddfadelante.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ddfadelante.BackColor = System.Drawing.Color.Black;
             this.btn_ddfadelante.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_ddfadelante.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_ddfadelante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ddfadelante.ForeColor = System.Drawing.Color.LightGray;
             this.btn_ddfadelante.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ddfadelante.Location = new System.Drawing.Point(-1, 102);
+            this.btn_ddfadelante.Location = new System.Drawing.Point(-1, 121);
             this.btn_ddfadelante.Name = "btn_ddfadelante";
-            this.btn_ddfadelante.Size = new System.Drawing.Size(874, 35);
+            this.btn_ddfadelante.Size = new System.Drawing.Size(1083, 35);
             this.btn_ddfadelante.TabIndex = 10;
             this.btn_ddfadelante.Text = "DIFERENCIAS DIVIDIDAS FINITAS HACIA ADELANTE\r\n";
             this.btn_ddfadelante.UseVisualStyleBackColor = false;
@@ -85,15 +88,16 @@
             // 
             // btn_ddfatras
             // 
+            this.btn_ddfatras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ddfatras.BackColor = System.Drawing.Color.Black;
             this.btn_ddfatras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_ddfatras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btn_ddfatras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ddfatras.ForeColor = System.Drawing.Color.LightGray;
             this.btn_ddfatras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ddfatras.Location = new System.Drawing.Point(-1, 199);
+            this.btn_ddfatras.Location = new System.Drawing.Point(-1, 218);
             this.btn_ddfatras.Name = "btn_ddfatras";
-            this.btn_ddfatras.Size = new System.Drawing.Size(874, 35);
+            this.btn_ddfatras.Size = new System.Drawing.Size(1083, 35);
             this.btn_ddfatras.TabIndex = 11;
             this.btn_ddfatras.Text = "DIFERENCIAS DIVIDIDAS FINTIAS HACIA ATRAS";
             this.btn_ddfatras.UseVisualStyleBackColor = false;
@@ -104,11 +108,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1081, 666);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_ddfcentrales);
             this.Controls.Add(this.btn_ddfadelante);
             this.Controls.Add(this.btn_ddfatras);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Diferenciacion";
             this.Text = "Formulario_Diferenciacion";
             this.ResumeLayout(false);

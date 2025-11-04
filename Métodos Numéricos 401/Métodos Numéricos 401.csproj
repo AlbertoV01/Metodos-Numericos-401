@@ -115,10 +115,10 @@
     <Compile Include="Formulario ddf centrales.Designer.cs">
       <DependentUpon>Formulario ddf centrales.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Diferenciacion.cs">
+    <Compile Include="FormsTema4\Formulario Diferenciacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Diferenciacion.Designer.cs">
+    <Compile Include="FormsTema4\Formulario Diferenciacion.Designer.cs">
       <DependentUpon>Formulario Diferenciacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Evaluaciones.cs">
@@ -145,10 +145,10 @@
     <Compile Include="Formulario Integracion Numerica.Designer.cs">
       <DependentUpon>Formulario Integracion Numerica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Iterativo Secuencial.cs">
+    <Compile Include="FormsTema3\Formulario Iterativo Secuencial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Iterativo Secuencial.Designer.cs">
+    <Compile Include="FormsTema3\Formulario Iterativo Secuencial.Designer.cs">
       <DependentUpon>Formulario Iterativo Secuencial.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsTema3\Formulario Jacobi.cs">
@@ -193,10 +193,10 @@
     <Compile Include="FormsTema3\Formulario Problemario T3.Designer.cs">
       <DependentUpon>Formulario Problemario T3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Problemario T4.cs">
+    <Compile Include="FormsTema4\Formulario Problemario T4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Problemario T4.Designer.cs">
+    <Compile Include="FormsTema4\Formulario Problemario T4.Designer.cs">
       <DependentUpon>Formulario Problemario T4.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsTema2\Formulario ProblemarioT2.cs">
@@ -241,10 +241,10 @@
     <Compile Include="Formulario Regla del Trapecio.Designer.cs">
       <DependentUpon>Formulario Regla del Trapecio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gauss-Seidel.cs">
+    <Compile Include="FormsTema3\Gauss-Seidel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gauss-Seidel.Designer.cs">
+    <Compile Include="FormsTema3\Gauss-Seidel.Designer.cs">
       <DependentUpon>Gauss-Seidel.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Gauss.cs" />
@@ -287,7 +287,7 @@
     <EmbeddedResource Include="Formulario ddf centrales.resx">
       <DependentUpon>Formulario ddf centrales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Diferenciacion.resx">
+    <EmbeddedResource Include="FormsTema4\Formulario Diferenciacion.resx">
       <DependentUpon>Formulario Diferenciacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Evaluaciones.resx">
@@ -302,7 +302,7 @@
     <EmbeddedResource Include="Formulario Integracion Numerica.resx">
       <DependentUpon>Formulario Integracion Numerica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Iterativo Secuencial.resx">
+    <EmbeddedResource Include="FormsTema3\Formulario Iterativo Secuencial.resx">
       <DependentUpon>Formulario Iterativo Secuencial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema3\Formulario Jacobi.resx">
@@ -326,7 +326,7 @@
     <EmbeddedResource Include="FormsTema3\Formulario Problemario T3.resx">
       <DependentUpon>Formulario Problemario T3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Problemario T4.resx">
+    <EmbeddedResource Include="FormsTema4\Formulario Problemario T4.resx">
       <DependentUpon>Formulario Problemario T4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema2\Formulario ProblemarioT2.resx">
@@ -350,7 +350,7 @@
     <EmbeddedResource Include="Formulario Regla del Trapecio.resx">
       <DependentUpon>Formulario Regla del Trapecio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gauss-Seidel.resx">
+    <EmbeddedResource Include="FormsTema3\Gauss-Seidel.resx">
       <DependentUpon>Gauss-Seidel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema2\FormsMetodosAbiertos\Netwon-Rhapson.resx">

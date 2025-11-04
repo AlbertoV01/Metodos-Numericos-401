@@ -75,6 +75,7 @@
             // 
             // pnl_TemasIzq
             // 
+            this.pnl_TemasIzq.AutoScroll = true;
             this.pnl_TemasIzq.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.pnl_TemasIzq.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_TemasIzq.Controls.Add(this.pnl_SubMenuTema4Izq);
@@ -102,7 +103,7 @@
             this.pnl_SubMenuTema4Izq.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_SubMenuTema4Izq.Location = new System.Drawing.Point(0, 769);
             this.pnl_SubMenuTema4Izq.Name = "pnl_SubMenuTema4Izq";
-            this.pnl_SubMenuTema4Izq.Size = new System.Drawing.Size(214, 140);
+            this.pnl_SubMenuTema4Izq.Size = new System.Drawing.Size(197, 140);
             this.pnl_SubMenuTema4Izq.TabIndex = 7;
             // 
             // btn_ProblemarioT4
@@ -116,7 +117,7 @@
             this.btn_ProblemarioT4.Location = new System.Drawing.Point(0, 80);
             this.btn_ProblemarioT4.Name = "btn_ProblemarioT4";
             this.btn_ProblemarioT4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_ProblemarioT4.Size = new System.Drawing.Size(214, 40);
+            this.btn_ProblemarioT4.Size = new System.Drawing.Size(197, 40);
             this.btn_ProblemarioT4.TabIndex = 6;
             this.btn_ProblemarioT4.Text = "PROBLEMARIO";
             this.btn_ProblemarioT4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,7 +135,7 @@
             this.btn_Integracion_numerica.Location = new System.Drawing.Point(0, 40);
             this.btn_Integracion_numerica.Name = "btn_Integracion_numerica";
             this.btn_Integracion_numerica.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Integracion_numerica.Size = new System.Drawing.Size(214, 40);
+            this.btn_Integracion_numerica.Size = new System.Drawing.Size(197, 40);
             this.btn_Integracion_numerica.TabIndex = 2;
             this.btn_Integracion_numerica.Text = "INTEGRACIÓN NUMÉRICA";
             this.btn_Integracion_numerica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,7 +153,7 @@
             this.btn_diferenciacion.Location = new System.Drawing.Point(0, 0);
             this.btn_diferenciacion.Name = "btn_diferenciacion";
             this.btn_diferenciacion.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_diferenciacion.Size = new System.Drawing.Size(214, 40);
+            this.btn_diferenciacion.Size = new System.Drawing.Size(197, 40);
             this.btn_diferenciacion.TabIndex = 1;
             this.btn_diferenciacion.Text = "DIFERENCIACION";
             this.btn_diferenciacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,7 +170,7 @@
             this.btn_Tema4.Location = new System.Drawing.Point(0, 724);
             this.btn_Tema4.Name = "btn_Tema4";
             this.btn_Tema4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_Tema4.Size = new System.Drawing.Size(214, 45);
+            this.btn_Tema4.Size = new System.Drawing.Size(197, 45);
             this.btn_Tema4.TabIndex = 6;
             this.btn_Tema4.Text = "4.- DIFERENCIACIÓN E INTEGRACIÓN NUMÉRICA\r\n\r\n";
             this.btn_Tema4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -187,7 +188,7 @@
             this.pnl_SubMenuTema3Izq.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_SubMenuTema3Izq.Location = new System.Drawing.Point(0, 505);
             this.pnl_SubMenuTema3Izq.Name = "pnl_SubMenuTema3Izq";
-            this.pnl_SubMenuTema3Izq.Size = new System.Drawing.Size(214, 219);
+            this.pnl_SubMenuTema3Izq.Size = new System.Drawing.Size(197, 219);
             this.pnl_SubMenuTema3Izq.TabIndex = 5;
             // 
             // btn_Problemario_T3
@@ -201,7 +202,7 @@
             this.btn_Problemario_T3.Location = new System.Drawing.Point(0, 160);
             this.btn_Problemario_T3.Name = "btn_Problemario_T3";
             this.btn_Problemario_T3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Problemario_T3.Size = new System.Drawing.Size(214, 40);
+            this.btn_Problemario_T3.Size = new System.Drawing.Size(197, 40);
             this.btn_Problemario_T3.TabIndex = 6;
             this.btn_Problemario_T3.Text = "PROBLEMARIO";
             this.btn_Problemario_T3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -219,7 +220,7 @@
             this.btn_I_Secuencial.Location = new System.Drawing.Point(0, 120);
             this.btn_I_Secuencial.Name = "btn_I_Secuencial";
             this.btn_I_Secuencial.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_I_Secuencial.Size = new System.Drawing.Size(214, 40);
+            this.btn_I_Secuencial.Size = new System.Drawing.Size(197, 40);
             this.btn_I_Secuencial.TabIndex = 5;
             this.btn_I_Secuencial.Text = "MÉTODO I. SECUENCIAL";
             this.btn_I_Secuencial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -237,7 +238,7 @@
             this.btn_Gauss_Seidel.Location = new System.Drawing.Point(0, 80);
             this.btn_Gauss_Seidel.Name = "btn_Gauss_Seidel";
             this.btn_Gauss_Seidel.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Gauss_Seidel.Size = new System.Drawing.Size(214, 40);
+            this.btn_Gauss_Seidel.Size = new System.Drawing.Size(197, 40);
             this.btn_Gauss_Seidel.TabIndex = 3;
             this.btn_Gauss_Seidel.Text = "MÉTODO G. SEIDEL";
             this.btn_Gauss_Seidel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,7 +256,7 @@
             this.btn_Jacobi.Location = new System.Drawing.Point(0, 40);
             this.btn_Jacobi.Name = "btn_Jacobi";
             this.btn_Jacobi.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Jacobi.Size = new System.Drawing.Size(214, 40);
+            this.btn_Jacobi.Size = new System.Drawing.Size(197, 40);
             this.btn_Jacobi.TabIndex = 2;
             this.btn_Jacobi.Text = "MÉTODO DE JACOBI";
             this.btn_Jacobi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,7 +274,7 @@
             this.btn_Gauss.Location = new System.Drawing.Point(0, 0);
             this.btn_Gauss.Name = "btn_Gauss";
             this.btn_Gauss.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Gauss.Size = new System.Drawing.Size(214, 40);
+            this.btn_Gauss.Size = new System.Drawing.Size(197, 40);
             this.btn_Gauss.TabIndex = 1;
             this.btn_Gauss.Text = "MÉTODO DE GAUSS";
             this.btn_Gauss.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,7 +291,7 @@
             this.btn_tema3.Location = new System.Drawing.Point(0, 460);
             this.btn_tema3.Name = "btn_tema3";
             this.btn_tema3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_tema3.Size = new System.Drawing.Size(214, 45);
+            this.btn_tema3.Size = new System.Drawing.Size(197, 45);
             this.btn_tema3.TabIndex = 4;
             this.btn_tema3.Text = "3.- MÉTODOS DE SOLUCIÓN DE SISTEMAS DE ECUACIONES";
             this.btn_tema3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -306,7 +307,7 @@
             this.pnl_SubMenuTema2Izq.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_SubMenuTema2Izq.Location = new System.Drawing.Point(0, 325);
             this.pnl_SubMenuTema2Izq.Name = "pnl_SubMenuTema2Izq";
-            this.pnl_SubMenuTema2Izq.Size = new System.Drawing.Size(214, 135);
+            this.pnl_SubMenuTema2Izq.Size = new System.Drawing.Size(197, 135);
             this.pnl_SubMenuTema2Izq.TabIndex = 3;
             // 
             // btn_Problemario_Excel_T2
@@ -320,7 +321,7 @@
             this.btn_Problemario_Excel_T2.Location = new System.Drawing.Point(0, 80);
             this.btn_Problemario_Excel_T2.Name = "btn_Problemario_Excel_T2";
             this.btn_Problemario_Excel_T2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Problemario_Excel_T2.Size = new System.Drawing.Size(214, 40);
+            this.btn_Problemario_Excel_T2.Size = new System.Drawing.Size(197, 40);
             this.btn_Problemario_Excel_T2.TabIndex = 3;
             this.btn_Problemario_Excel_T2.Text = "PROBLEMARIO";
             this.btn_Problemario_Excel_T2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -338,7 +339,7 @@
             this.button9.Location = new System.Drawing.Point(0, 40);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(214, 40);
+            this.button9.Size = new System.Drawing.Size(197, 40);
             this.button9.TabIndex = 2;
             this.button9.Text = "MÉTODOS ABIERTOS";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -356,7 +357,7 @@
             this.btn_Metodos_Cerrados.Location = new System.Drawing.Point(0, 0);
             this.btn_Metodos_Cerrados.Name = "btn_Metodos_Cerrados";
             this.btn_Metodos_Cerrados.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Metodos_Cerrados.Size = new System.Drawing.Size(214, 40);
+            this.btn_Metodos_Cerrados.Size = new System.Drawing.Size(197, 40);
             this.btn_Metodos_Cerrados.TabIndex = 1;
             this.btn_Metodos_Cerrados.Text = "MÉTODOS CERRADOS";
             this.btn_Metodos_Cerrados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -373,7 +374,7 @@
             this.btn_Tema2.Location = new System.Drawing.Point(0, 280);
             this.btn_Tema2.Name = "btn_Tema2";
             this.btn_Tema2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_Tema2.Size = new System.Drawing.Size(214, 45);
+            this.btn_Tema2.Size = new System.Drawing.Size(197, 45);
             this.btn_Tema2.TabIndex = 2;
             this.btn_Tema2.Text = "2.- MÉTODOS DE SOLUCIÓN DE ECUACIONES";
             this.btn_Tema2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,7 +390,7 @@
             this.pnl_SubMenuTema1Izq.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_SubMenuTema1Izq.Location = new System.Drawing.Point(0, 145);
             this.pnl_SubMenuTema1Izq.Name = "pnl_SubMenuTema1Izq";
-            this.pnl_SubMenuTema1Izq.Size = new System.Drawing.Size(214, 135);
+            this.pnl_SubMenuTema1Izq.Size = new System.Drawing.Size(197, 135);
             this.pnl_SubMenuTema1Izq.TabIndex = 1;
             // 
             // btn_Problemario
@@ -403,7 +404,7 @@
             this.btn_Problemario.Location = new System.Drawing.Point(0, 80);
             this.btn_Problemario.Name = "btn_Problemario";
             this.btn_Problemario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Problemario.Size = new System.Drawing.Size(214, 40);
+            this.btn_Problemario.Size = new System.Drawing.Size(197, 40);
             this.btn_Problemario.TabIndex = 3;
             this.btn_Problemario.Text = "PROBLEMARIO";
             this.btn_Problemario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -421,7 +422,7 @@
             this.btn_MapaConceptual.Location = new System.Drawing.Point(0, 40);
             this.btn_MapaConceptual.Name = "btn_MapaConceptual";
             this.btn_MapaConceptual.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_MapaConceptual.Size = new System.Drawing.Size(214, 40);
+            this.btn_MapaConceptual.Size = new System.Drawing.Size(197, 40);
             this.btn_MapaConceptual.TabIndex = 2;
             this.btn_MapaConceptual.Text = "MAPA CONCEPTUAL";
             this.btn_MapaConceptual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -439,7 +440,7 @@
             this.btn_Ejercicios.Location = new System.Drawing.Point(0, 0);
             this.btn_Ejercicios.Name = "btn_Ejercicios";
             this.btn_Ejercicios.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Ejercicios.Size = new System.Drawing.Size(214, 40);
+            this.btn_Ejercicios.Size = new System.Drawing.Size(197, 40);
             this.btn_Ejercicios.TabIndex = 1;
             this.btn_Ejercicios.Text = "EJERCICIOS";
             this.btn_Ejercicios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -456,7 +457,7 @@
             this.btn_Tema1.Location = new System.Drawing.Point(0, 100);
             this.btn_Tema1.Name = "btn_Tema1";
             this.btn_Tema1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_Tema1.Size = new System.Drawing.Size(214, 45);
+            this.btn_Tema1.Size = new System.Drawing.Size(197, 45);
             this.btn_Tema1.TabIndex = 1;
             this.btn_Tema1.Text = "1.- INTRODUCCIÓN A LOS MÉTODOS NUMÉRICOS";
             this.btn_Tema1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -470,7 +471,7 @@
             this.pnl_MetodosNumericos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_MetodosNumericos.Location = new System.Drawing.Point(0, 0);
             this.pnl_MetodosNumericos.Name = "pnl_MetodosNumericos";
-            this.pnl_MetodosNumericos.Size = new System.Drawing.Size(214, 100);
+            this.pnl_MetodosNumericos.Size = new System.Drawing.Size(197, 100);
             this.pnl_MetodosNumericos.TabIndex = 1;
             // 
             // button1
