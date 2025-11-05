@@ -20,7 +20,6 @@ namespace Métodos_Numéricos_401
         Calculo oCalculo = new Calculo();
         double h = 0;
         double xi = 0;
-        double valorverdadero = 0;
         double ximas1 = 0;
         double ximas2 = 0;
         double ximas3 = 0;
@@ -33,349 +32,260 @@ namespace Métodos_Numéricos_401
         double fximas3 = 0;
         double fximas4 = 0;
         double erp = 0;
+
+
         private void btn_Calcular_Click(object sender, EventArgs e)
         {
+
+
+            //------------------------------- //PRIMERA DERIVADA
             if (checkBox_PrimeraDerivada.Checked)
             {
-                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) ||
-                    ValidarTextboxs.CamposVacios(tb_valorverdadero) || ValidarTextboxs.CamposVacios(tb_Funcion))
+                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) || ValidarTextboxs.CamposVacios(tb_valorverdadero))
                 {
-                    MessageBox.Show("No se admiten campos vacíos", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 dgv_ecuacionSustituida.Rows.Clear();
+                //SE TOMA LOS VALORES DEL PROBLEMA
+                h = Convert.ToDouble(tb_h.Text);
+                xi = Convert.ToDouble(tb_xi.Text);
+                double valorverdadero = Convert.ToDouble(tb_valorverdadero.Text);
+                checkBoxSegundaDerivada.Checked = false;
+                checkBoxTerceraDerivada.Checked = false;
 
-                double h = Convert.ToDouble(tb_h.Text);
-                double xi = Convert.ToDouble(tb_xi.Text);
-                double valorVerdadero = Convert.ToDouble(tb_valorverdadero.Text);
-                string funcion = tb_Funcion.Text;
+                ximas1 = xi + h;
+                ximas2 = xi + (2 * h);
+                funcion = tb_Funcion.Text;
 
-                double fxi = EvaluarFuncion(funcion, xi);
-                double fximas1 = EvaluarFuncion(funcion, xi + h);
-                double fximas2 = EvaluarFuncion(funcion, xi + 2 * h);
+                //Se calcula f(xi)
+                funcionSustituida = funcion.Replace("x", xi.ToString());
 
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}) = {fxi}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+h) = {fximas1}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+2h) = {fximas2}");
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fxi = oCalculo.EvaluaFx(xi);
 
-                double resultado = (-fximas2 + 4 * fximas1 - 3 * fxi) / (2 * h);
-                double erp = Math.Abs((valorVerdadero - resultado) / valorVerdadero) * 100;
+                }
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fxi);
+                //Se calcula f(ximas1)
+                funcionSustituida = funcion.Replace("x", ximas1.ToString());
 
-                label_Resultado.Text = resultado.ToString();
-                label_Error.Text = erp.ToString("F4") + "%";
-                valorVerdadero = 0;
-                xi = 0;
-                h = 0;
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas1 = oCalculo.EvaluaFx(ximas1);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas1.ToString());
+
+                //se calcula f(ximas2)
+                funcionSustituida = funcion.Replace("x", ximas2.ToString());
+
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas2 = oCalculo.EvaluaFx(ximas2);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas2.ToString());
+
+
+                double resultadoPD = (-fximas2 + 4 * fximas1 - 3 * fxi) / (2 * h);
+
+                // Valor verdadero numérico:
+                double valorVerdadero = string.IsNullOrWhiteSpace(tb_valorverdadero.Text)
+                    ? ValorVerdaderoPrimera(funcion, xi)
+                    : Convert.ToDouble(tb_valorverdadero.Text);
+
+                label_Resultado.Text = resultadoPD.ToString();
+
+                erp = Math.Abs((valorverdadero - resultadoPD) / valorverdadero) * 100;
+                label_Error.Text = erp.ToString() + "%";
             }
-
-            // ---------------------- SEGUNDA DERIVADA ----------------------
+            //-------------------------------  //SEGUNDA DERIVADA
             if (checkBoxSegundaDerivada.Checked)
             {
-                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) ||
-                    ValidarTextboxs.CamposVacios(tb_valorverdadero) || ValidarTextboxs.CamposVacios(tb_Funcion))
-                {
-                    MessageBox.Show("No se admiten campos vacíos", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
                 dgv_ecuacionSustituida.Rows.Clear();
 
-                double h = Convert.ToDouble(tb_h.Text);
-                double xi = Convert.ToDouble(tb_xi.Text);
-                double valorVerdadero = Convert.ToDouble(tb_valorverdadero.Text);
-                string funcion = tb_Funcion.Text;
+                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) || ValidarTextboxs.CamposVacios(tb_valorverdadero) || ValidarTextboxs.CamposVacios(tb_Funcion))
+                {
+                    MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                checkBox_PrimeraDerivada.Checked = false;
+                checkBoxTerceraDerivada.Checked = false;
 
-                double fxi = EvaluarFuncion(funcion, xi);
-                double fximas1 = EvaluarFuncion(funcion, xi + h);
-                double fximas2 = EvaluarFuncion(funcion, xi + 2 * h);
-                double fximas3 = EvaluarFuncion(funcion, xi + 3 * h);
+                h = Convert.ToDouble(tb_h.Text);
+                xi = Convert.ToDouble(tb_xi.Text);
+               double valorverdadero = Convert.ToDouble(tb_valorverdadero.Text);
 
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}) = {fxi}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+h) = {fximas1}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+2h) = {fximas2}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+3h) = {fximas3}");
+                ximas1 = xi + h;
+                ximas2 = xi + (2 * h);
+                ximas3 = xi + (3 * h);
+                funcion = tb_Funcion.Text;
 
-                double resultado = (-fximas3 + 4 * fximas2 - 5 * fximas1 + 2 * fxi) / (h * h);
-                double erp = Math.Abs((valorVerdadero - resultado) / valorVerdadero) * 100;
+                //Se calcula f(xi)
+                funcionSustituida = funcion.Replace("x", xi.ToString());
 
-                label_Resultado.Text = resultado.ToString();
-                label_Error.Text = erp.ToString("F4") + "%";
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fxi = oCalculo.EvaluaFx(xi);
+
+                }
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fxi);
+                //Se calcula f(ximas1)
+                funcionSustituida = funcion.Replace("x", ximas1.ToString());
+
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas1 = oCalculo.EvaluaFx(ximas1);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas1.ToString());
+
+                //se calcula f(ximas2)
+                funcionSustituida = funcion.Replace("x", ximas2.ToString());
+
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas2 = oCalculo.EvaluaFx(ximas2);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas2.ToString());
+
+                //Se calcula f(ximas3)
+                funcionSustituida = funcion.Replace("x", ximas3.ToString());
+
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas3 = oCalculo.EvaluaFx(ximas3);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas3.ToString());
+
+                double resultadoPD = (-fximas3 + (4 * fximas2) - (5 * fximas1) + 2 * fxi) / (h * h);
+                label_Resultado.Text = resultadoPD.ToString();
+
+
+                // Valor verdadero numérico:
+                 valorverdadero = ValorVerdaderoSegunda(funcion, xi);
+
+
+
+                erp = Math.Abs((valorverdadero - resultadoPD) / valorverdadero) * 100;
+                label_Error.Text = erp.ToString() + "%";
             }
 
-            // ---------------------- TERCERA DERIVADA ----------------------
+            //------------------------------- TERCERA DERIVADA
             if (checkBoxTerceraDerivada.Checked)
             {
-                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) ||
-                    ValidarTextboxs.CamposVacios(tb_valorverdadero) || ValidarTextboxs.CamposVacios(tb_Funcion))
+                dgv_ecuacionSustituida.Rows.Clear();
+
+                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) || ValidarTextboxs.CamposVacios(tb_valorverdadero) || ValidarTextboxs.CamposVacios(tb_Funcion))
                 {
-                    MessageBox.Show("No se admiten campos vacíos", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                dgv_ecuacionSustituida.Rows.Clear();
+                checkBox_PrimeraDerivada.Checked = false;
+                checkBoxTerceraDerivada.Checked = false;
 
-                double h = Convert.ToDouble(tb_h.Text);
-                double xi = Convert.ToDouble(tb_xi.Text);
-                double valorVerdadero = Convert.ToDouble(tb_valorverdadero.Text);
-                string funcion = tb_Funcion.Text;
+                h = Convert.ToDouble(tb_h.Text);
+                xi = Convert.ToDouble(tb_xi.Text);
+                double valorverdadero = Convert.ToDouble(tb_valorverdadero.Text);
 
-                double fxi = EvaluarFuncion(funcion, xi);
-                double fximas1 = EvaluarFuncion(funcion, xi + h);
-                double fximas2 = EvaluarFuncion(funcion, xi + 2 * h);
-                double fximas3 = EvaluarFuncion(funcion, xi + 3 * h);
-                double fximas4 = EvaluarFuncion(funcion, xi + 4 * h);
+                ximas1 = xi + h;
+                ximas2 = xi + (2 * h);
+                ximas3 = xi + (3 * h);
+                ximas4 = xi + (4 * h);
+                funcion = tb_Funcion.Text;
 
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}) = {fxi}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+h) = {fximas1}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+2h) = {fximas2}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+3h) = {fximas3}");
-                dgv_ecuacionSustituida.Rows.Add($"f({xi}+4h) = {fximas4}");
+                //Se calcula f(xi)
+                funcionSustituida = funcion.Replace("x", xi.ToString());
 
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fxi = oCalculo.EvaluaFx(xi);
+
+                }
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fxi);
+                //Se calcula f(ximas1)
+                funcionSustituida = funcion.Replace("x", ximas1.ToString());
+
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas1 = oCalculo.EvaluaFx(ximas1);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas1.ToString());
+
+                //se calcula f(ximas2)
+                funcionSustituida = funcion.Replace("x", ximas2.ToString());
+
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas2 = oCalculo.EvaluaFx(ximas2);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas2.ToString());
+
+                //Se calcula f(ximas3)
+                funcionSustituida = funcion.Replace("x", ximas3.ToString());
+
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas3 = oCalculo.EvaluaFx(ximas3);
+                }
+
+                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas3.ToString());
+
+                //Se calcula f(ximas4)
+                funcionSustituida = funcion.Replace("x", ximas3.ToString());
+                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
+                {
+                    fximas4 = oCalculo.EvaluaFx(ximas4);
+                }
+                double xj = Math.Pow(h, 3);
+                double resultadoPD = (-3 * fximas4 + 14 * fximas3 - 24 * fximas2 + 18 * fximas1 - 5 * fxi) / (2 * xj);
                 double resultado = (-3 * fximas4 + 14 * fximas3 - 24 * fximas2 + 18 * fximas1 - 5 * fxi) / (2 * Math.Pow(h, 3));
-                double erp = Math.Abs((valorVerdadero - resultado) / valorVerdadero) * 100;
+                label_Resultado.Text = resultadoPD.ToString();
 
-                label_Resultado.Text = resultado.ToString();
-                label_Error.Text = erp.ToString("F4") + "%";
+
+                // Valor verdadero numérico:
+                valorverdadero = ValorVerdaderoTercera(funcion, xi);
+
+                erp = Math.Abs((valorverdadero - resultadoPD) / valorverdadero) * 100;
+                label_Error.Text = erp.ToString() + "%";
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            ////------------------------------- //PRIMERA DERIVADA
-            //            if(checkBox_PrimeraDerivada.Checked)
-            //            {
-            //                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) || ValidarTextboxs.CamposVacios(tb_valorverdadero))
-            //                {
-            //                    MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //                    return;
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Clear();
-            //                //SE TOMA LOS VALORES DEL PROBLEMA
-            //                h = Convert.ToDouble(tb_h.Text);
-            //                xi = Convert.ToDouble(tb_xi.Text);
-            //                valorverdadero = Convert.ToDouble(tb_valorverdadero.Text);
-            //                checkBoxSegundaDerivada.Checked = false;
-            //                checkBoxTerceraDerivada.Checked=false;
-
-            //                ximas1 = xi + h;
-            //                ximas2 = xi + (2*h);
-            //                funcion = tb_Funcion.Text;
-
-            //                //Se calcula f(xi)
-            //                funcionSustituida = funcion.Replace("x", xi.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text,'x'))
-            //                {
-            //                    fxi = oCalculo.EvaluaFx(xi);
-
-            //                }
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fxi);
-            //                //Se calcula f(ximas1)
-            //                funcionSustituida = funcion.Replace("x", ximas1.ToString());
-
-            //                if ( oCalculo.Sintaxis(tb_Funcion.Text,'x') )
-            //                {
-            //                    fximas1= oCalculo.EvaluaFx(ximas1);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida+" = "+ fximas1.ToString());
-
-            //                //se calcula f(ximas2)
-            //                funcionSustituida = funcion.Replace("x", ximas2.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text,'x'))
-            //                {
-            //                    fximas2 = oCalculo.EvaluaFx(ximas2);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida+" = "+fximas2.ToString());
-
-
-            //                double resultadoPD = (-fximas2+4*fximas1-3*fxi)/(2*h);
-
-            //                label_Resultado.Text = resultadoPD.ToString();
-
-            //                erp = Math.Abs((valorverdadero - resultadoPD)/valorverdadero)*100;
-            //                label_Error.Text = erp.ToString()+"%";
-            //            }
-            ////-------------------------------  //SEGUNDA DERIVADA
-            //            if(checkBoxSegundaDerivada.Checked)
-            //            {
-            //                dgv_ecuacionSustituida.Rows.Clear();
-
-            //                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) || ValidarTextboxs.CamposVacios(tb_valorverdadero) ||ValidarTextboxs.CamposVacios(tb_Funcion))
-            //                {
-            //                    MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //                    return;
-            //                }
-            //                checkBox_PrimeraDerivada.Checked = false;
-            //                checkBoxTerceraDerivada.Checked = false;
-
-            //                h = Convert.ToDouble(tb_h.Text);
-            //                xi = Convert.ToDouble(tb_xi.Text);
-            //                valorverdadero = Convert.ToDouble(tb_valorverdadero.Text);
-
-            //                ximas1 = xi + h;
-            //                ximas2 = xi + (2 * h);
-            //                ximas3 = xi + (3 * h);
-            //                funcion = tb_Funcion.Text;
-
-            //                //Se calcula f(xi)
-            //                funcionSustituida = funcion.Replace("x", xi.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fxi = oCalculo.EvaluaFx(xi);
-
-            //                }
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fxi);
-            //                //Se calcula f(ximas1)
-            //                funcionSustituida = funcion.Replace("x", ximas1.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fximas1 = oCalculo.EvaluaFx(ximas1);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas1.ToString());
-
-            //                //se calcula f(ximas2)
-            //                funcionSustituida = funcion.Replace("x", ximas2.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fximas2 = oCalculo.EvaluaFx(ximas2);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas2.ToString());
-
-            //                //Se calcula f(ximas3)
-            //                funcionSustituida = funcion.Replace("x", ximas3.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fximas3 = oCalculo.EvaluaFx(ximas3);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas3.ToString());
-
-            //                double resultadoPD = (-fximas3 + (4*fximas2)-(5*fximas1)+2*fxi)/(h*h);
-            //                label_Resultado.Text = resultadoPD.ToString();
-            //                erp = Math.Abs((valorverdadero - resultadoPD)/ valorverdadero) * 100;
-            //                label_Error.Text = erp.ToString()+"%";
-            //            }
-
-            ////------------------------------- TERCERA DERIVADA
-            //            if(checkBoxTerceraDerivada.Checked)
-            //            {
-            //                dgv_ecuacionSustituida.Rows.Clear();
-
-            //                if (ValidarTextboxs.CamposVacios(tb_h) || ValidarTextboxs.CamposVacios(tb_xi) || ValidarTextboxs.CamposVacios(tb_valorverdadero) || ValidarTextboxs.CamposVacios(tb_Funcion))
-            //                {
-            //                    MessageBox.Show("No se ademite campos vacios", ":I", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //                    return;
-            //                }
-
-            //                checkBox_PrimeraDerivada.Checked = false;
-            //                checkBoxTerceraDerivada.Checked = false;
-
-            //                h = Convert.ToDouble(tb_h.Text);
-            //                xi = Convert.ToDouble(tb_xi.Text);
-            //                valorverdadero = Convert.ToDouble(tb_valorverdadero.Text);
-
-            //                ximas1 = xi + h;
-            //                ximas2 = xi + (2 * h);
-            //                ximas3 = xi + (3 * h);
-            //                ximas4 = xi + (4 * h);
-            //                funcion = tb_Funcion.Text;
-
-            //                //Se calcula f(xi)
-            //                funcionSustituida = funcion.Replace("x", xi.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fxi = oCalculo.EvaluaFx(xi);
-
-            //                }
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fxi);
-            //                //Se calcula f(ximas1)
-            //                funcionSustituida = funcion.Replace("x", ximas1.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fximas1 = oCalculo.EvaluaFx(ximas1);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas1.ToString());
-
-            //                //se calcula f(ximas2)
-            //                funcionSustituida = funcion.Replace("x", ximas2.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fximas2 = oCalculo.EvaluaFx(ximas2);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas2.ToString());
-
-            //                //Se calcula f(ximas3)
-            //                funcionSustituida = funcion.Replace("x", ximas3.ToString());
-
-            //                if (oCalculo.Sintaxis(tb_Funcion.Text, 'x'))
-            //                {
-            //                    fximas3 = oCalculo.EvaluaFx(ximas3);
-            //                }
-
-            //                dgv_ecuacionSustituida.Rows.Add(funcionSustituida + " = " + fximas3.ToString());
-
-            //                //Se calcula f(ximas4)
-            //                funcionSustituida = funcion.Replace("x", ximas3.ToString());
-            //                if(oCalculo.Sintaxis(tb_Funcion.Text,'x'))
-            //                {
-            //                    fximas4 = oCalculo.EvaluaFx(ximas4);
-            //                }
-            //                double xj = Math.Pow(h, 3);
-            //                double resultadoPD = (-3*fximas4+14*fximas3-24*fximas2+18*fximas1-5*fxi)/(2*xj);
-            //                label_Resultado.Text = resultadoPD.ToString();
-            //                erp = Math.Abs((valorverdadero - resultadoPD) / valorverdadero) * 100;
-            //                label_Error.Text = erp.ToString() + "%";
-            //            }
         }
 
+        private double ValorVerdaderoPrimera(string funcion, double xi)
+        {
+            double h = 1e-5; // h pequeño alta precisión
+            double f_xh = EvaluarFuncion(funcion, xi + h);
+            double f_xmh = EvaluarFuncion(funcion, xi - h);
+            return (f_xh - f_xmh) / (2 * h);
+        }
 
+        private double ValorVerdaderoSegunda(string funcion, double xi)
+        {
+            double h = 1e-4;
+            double f_xh = EvaluarFuncion(funcion, xi + h);
+            double f_x = EvaluarFuncion(funcion, xi);
+            double f_xmh = EvaluarFuncion(funcion, xi - h);
+            return (f_xh - 2 * f_x + f_xmh) / (h * h);
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        private double ValorVerdaderoTercera(string funcion, double xi)
+        {
+            double h = 1e-3;
+            double f3 = EvaluarFuncion(funcion, xi + 3 * h);
+            double f2 = EvaluarFuncion(funcion, xi + 2 * h);
+            double f1 = EvaluarFuncion(funcion, xi + h);
+            double fm1 = EvaluarFuncion(funcion, xi - h);
+            double fm2 = EvaluarFuncion(funcion, xi - 2 * h);
+            double fm3 = EvaluarFuncion(funcion, xi - 3 * h);
+            return (-f3 + 8 * f2 - 13 * f1 + 13 * fm1 - 8 * fm2 + fm3) / (8 * Math.Pow(h, 3));
+        }
 
         private double EvaluarFuncion(string funcion, double x)
         {
@@ -384,22 +294,6 @@ namespace Métodos_Numéricos_401
             else
                 throw new Exception("La función ingresada no es válida.");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {

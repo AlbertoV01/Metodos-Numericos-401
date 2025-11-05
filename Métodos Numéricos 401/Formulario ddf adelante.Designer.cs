@@ -399,7 +399,7 @@
             this.ForeColor = System.Drawing.Color.LightSalmon;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_ddf_adelante";
-            this.Text = "Formulario_ddf_adelante";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
