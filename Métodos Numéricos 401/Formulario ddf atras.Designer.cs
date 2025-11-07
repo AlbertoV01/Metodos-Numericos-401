@@ -81,7 +81,7 @@
             this.label_Error.AutoSize = true;
             this.label_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Error.ForeColor = System.Drawing.Color.LightSalmon;
-            this.label_Error.Location = new System.Drawing.Point(487, 382);
+            this.label_Error.Location = new System.Drawing.Point(683, 382);
             this.label_Error.Name = "label_Error";
             this.label_Error.Size = new System.Drawing.Size(0, 33);
             this.label_Error.TabIndex = 40;
@@ -101,7 +101,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightGray;
-            this.label6.Location = new System.Drawing.Point(476, 321);
+            this.label6.Location = new System.Drawing.Point(672, 321);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(341, 33);
             this.label6.TabIndex = 38;
@@ -147,7 +147,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_ecuacionSustituida.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_ecuacionSustituida.Location = new System.Drawing.Point(115, 55);
+            this.dgv_ecuacionSustituida.Location = new System.Drawing.Point(156, 60);
             this.dgv_ecuacionSustituida.Name = "dgv_ecuacionSustituida";
             this.dgv_ecuacionSustituida.ReadOnly = true;
             this.dgv_ecuacionSustituida.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -162,7 +162,7 @@
             this.dgv_ecuacionSustituida.RowHeadersVisible = false;
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gray;
             this.dgv_ecuacionSustituida.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_ecuacionSustituida.Size = new System.Drawing.Size(355, 228);
+            this.dgv_ecuacionSustituida.Size = new System.Drawing.Size(510, 228);
             this.dgv_ecuacionSustituida.TabIndex = 36;
             // 
             // a
@@ -220,7 +220,7 @@
             this.checkBoxTerceraDerivada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.checkBoxTerceraDerivada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBoxTerceraDerivada.ForeColor = System.Drawing.Color.LightGray;
-            this.checkBoxTerceraDerivada.Location = new System.Drawing.Point(482, 240);
+            this.checkBoxTerceraDerivada.Location = new System.Drawing.Point(678, 240);
             this.checkBoxTerceraDerivada.Name = "checkBoxTerceraDerivada";
             this.checkBoxTerceraDerivada.Size = new System.Drawing.Size(106, 30);
             this.checkBoxTerceraDerivada.TabIndex = 31;
@@ -234,7 +234,7 @@
             this.checkBoxSegundaDerivada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.checkBoxSegundaDerivada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBoxSegundaDerivada.ForeColor = System.Drawing.Color.LightGray;
-            this.checkBoxSegundaDerivada.Location = new System.Drawing.Point(476, 147);
+            this.checkBoxSegundaDerivada.Location = new System.Drawing.Point(672, 147);
             this.checkBoxSegundaDerivada.Name = "checkBoxSegundaDerivada";
             this.checkBoxSegundaDerivada.Size = new System.Drawing.Size(112, 30);
             this.checkBoxSegundaDerivada.TabIndex = 29;
@@ -248,7 +248,7 @@
             this.checkBox_PrimeraDerivada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.checkBox_PrimeraDerivada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox_PrimeraDerivada.ForeColor = System.Drawing.Color.LightGray;
-            this.checkBox_PrimeraDerivada.Location = new System.Drawing.Point(482, 60);
+            this.checkBox_PrimeraDerivada.Location = new System.Drawing.Point(678, 60);
             this.checkBox_PrimeraDerivada.Name = "checkBox_PrimeraDerivada";
             this.checkBox_PrimeraDerivada.Size = new System.Drawing.Size(106, 30);
             this.checkBox_PrimeraDerivada.TabIndex = 28;
@@ -260,7 +260,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(267, 4);
+            this.label1.Location = new System.Drawing.Point(379, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 25;
@@ -307,7 +307,7 @@
             this.tb_Funcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_Funcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_Funcion.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_Funcion.Location = new System.Drawing.Point(115, 26);
+            this.tb_Funcion.Location = new System.Drawing.Point(227, 31);
             this.tb_Funcion.Name = "tb_Funcion";
             this.tb_Funcion.Size = new System.Drawing.Size(355, 20);
             this.tb_Funcion.TabIndex = 21;
@@ -331,7 +331,7 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::Métodos_Numéricos_401.Properties.Resources.TercerDerivadaSegundaFormulaAtras;
-            this.pictureBox3.Location = new System.Drawing.Point(597, 230);
+            this.pictureBox3.Location = new System.Drawing.Point(793, 230);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(260, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -342,7 +342,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::Métodos_Numéricos_401.Properties.Resources.SegundaDerivadaSegundaFormulaAtras;
-            this.pictureBox2.Location = new System.Drawing.Point(597, 137);
+            this.pictureBox2.Location = new System.Drawing.Point(793, 137);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(260, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -353,7 +353,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Métodos_Numéricos_401.Properties.Resources.PrimerDerivadaSegundaFormulaAtras;
-            this.pictureBox1.Location = new System.Drawing.Point(597, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(793, 55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,7 +365,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.LightSalmon;
-            this.label7.Location = new System.Drawing.Point(575, 20);
+            this.label7.Location = new System.Drawing.Point(771, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(208, 24);
             this.label7.TabIndex = 67;
@@ -376,7 +376,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1065, 627);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Limpiar);
@@ -400,8 +400,11 @@
             this.Controls.Add(this.tb_h);
             this.Controls.Add(this.tb_xi);
             this.Controls.Add(this.tb_Funcion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_ddf_atras";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario_ddf_atras";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ecuacionSustituida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

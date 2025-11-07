@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Calculus;
+using Métodos_Numéricos_401.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Calculus;
 
 namespace Métodos_Numéricos_401
 {
@@ -18,6 +19,7 @@ namespace Métodos_Numéricos_401
             InitializeComponent();
         }
         Calculo oCalculo = new Calculo();
+        Ddf oDdf = new Ddf();
         double h = 0;
         double xi = 0;
         double valorverdadero = 0;
@@ -160,6 +162,8 @@ namespace Métodos_Numéricos_401
 
                 double resultadoPD = (2*(fxi)-5*(fximenos1)+4*(fximenos2)-(fximenos3))/(h*h);
                 label_Resultado.Text = resultadoPD.ToString();
+                valorverdadero = oDdf.ValorVerdaderoSegunda(funcion, xi);
+
                 erp = Math.Abs((valorverdadero - resultadoPD) / valorverdadero) * 100;
                 label_Error.Text = erp.ToString() + "%";
             }
@@ -238,6 +242,8 @@ namespace Métodos_Numéricos_401
                 double xj = Math.Pow(h, 3);
                 double resultadoPD = (5*(fxi)-18*(fximenos1)+24*(fximenos2)-14*(fximenos3)+3*(fximenos4))/(2*xj);
                 label_Resultado.Text = resultadoPD.ToString();
+                valorverdadero = oDdf.ValorVerdaderoTercera(funcion, xi);
+
                 erp = Math.Abs((valorverdadero - resultadoPD) / valorverdadero) * 100;
                 label_Error.Text = erp.ToString() + "%";
             }

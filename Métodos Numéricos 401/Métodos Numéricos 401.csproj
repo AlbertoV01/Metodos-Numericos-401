@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Biseccion.cs" />
+    <Compile Include="Clases\Ddf.cs" />
     <Compile Include="Clases\Falsa Posicion.cs" />
     <Compile Include="Formulaio Regla de Simpson 1_3 por intervalos.cs">
       <SubType>Form</SubType>

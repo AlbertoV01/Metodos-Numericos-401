@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Calculus;
+using Métodos_Numéricos_401.Clases;
 using Z.Expressions;
 namespace Métodos_Numéricos_401
 {
@@ -11,6 +12,7 @@ namespace Métodos_Numéricos_401
             InitializeComponent();
         }
         Calculo oCalculo = new Calculo();
+        Ddf oDdf = new Ddf();
         double h = 0;
         double xi = 0;
         double ximas1 = 0;
@@ -86,7 +88,7 @@ namespace Métodos_Numéricos_401
 
                 // Valor verdadero numérico:
                 double valorVerdadero = string.IsNullOrWhiteSpace(tb_valorverdadero.Text)
-                    ? ValorVerdaderoPrimera(funcion, xi)
+                    ? oDdf.ValorVerdaderoPrimera(funcion, xi)
                     : Convert.ToDouble(tb_valorverdadero.Text);
 
                 label_Resultado.Text = resultadoPD.ToString();
@@ -160,7 +162,7 @@ namespace Métodos_Numéricos_401
 
 
                 // Valor verdadero numérico:
-                 valorverdadero = ValorVerdaderoSegunda(funcion, xi);
+                 valorverdadero = oDdf.ValorVerdaderoSegunda(funcion, xi);
 
 
 
@@ -244,49 +246,16 @@ namespace Métodos_Numéricos_401
 
 
                 // Valor verdadero numérico:
-                valorverdadero = ValorVerdaderoTercera(funcion, xi);
+                valorverdadero = oDdf.ValorVerdaderoTercera(funcion, xi);
 
                 erp = Math.Abs((valorverdadero - resultadoPD) / valorverdadero) * 100;
                 label_Error.Text = erp.ToString() + "%";
             }
         }
 
-        private double ValorVerdaderoPrimera(string funcion, double xi)
-        {
-            double h = 1e-5; // h pequeño alta precisión
-            double f_xh = EvaluarFuncion(funcion, xi + h);
-            double f_xmh = EvaluarFuncion(funcion, xi - h);
-            return (f_xh - f_xmh) / (2 * h);
-        }
+     
 
-        private double ValorVerdaderoSegunda(string funcion, double xi)
-        {
-            double h = 1e-4;
-            double f_xh = EvaluarFuncion(funcion, xi + h);
-            double f_x = EvaluarFuncion(funcion, xi);
-            double f_xmh = EvaluarFuncion(funcion, xi - h);
-            return (f_xh - 2 * f_x + f_xmh) / (h * h);
-        }
-
-        private double ValorVerdaderoTercera(string funcion, double xi)
-        {
-            double h = 1e-3;
-            double f3 = EvaluarFuncion(funcion, xi + 3 * h);
-            double f2 = EvaluarFuncion(funcion, xi + 2 * h);
-            double f1 = EvaluarFuncion(funcion, xi + h);
-            double fm1 = EvaluarFuncion(funcion, xi - h);
-            double fm2 = EvaluarFuncion(funcion, xi - 2 * h);
-            double fm3 = EvaluarFuncion(funcion, xi - 3 * h);
-            return (-f3 + 8 * f2 - 13 * f1 + 13 * fm1 - 8 * fm2 + fm3) / (8 * Math.Pow(h, 3));
-        }
-
-        private double EvaluarFuncion(string funcion, double x)
-        {
-            if (oCalculo.Sintaxis(funcion, 'x'))
-                return oCalculo.EvaluaFx(x);
-            else
-                throw new Exception("La función ingresada no es válida.");
-        }
+      
 
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
