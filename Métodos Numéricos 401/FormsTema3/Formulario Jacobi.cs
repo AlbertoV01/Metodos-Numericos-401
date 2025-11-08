@@ -202,6 +202,9 @@ namespace Métodos_Numéricos_401
             } while ((dgv_Resultados.ColumnCount / 2 != Errores.Where(a => a <= double.Parse(tb_ErrorEsperado.Text)).ToList().Count));
             }catch(Z.Expressions.Compiler.Shared.EvalException ex) {
                 MessageBox.Show("Ingresa las ecuaciones de forma correcta");
+            }catch(System.InvalidOperationException ex)
+            {
+                MessageBox.Show("ingresa las ecuaciones primero");
             }
         }
         private void tb_ValorInicial_KeyPress(object sender, KeyPressEventArgs e)

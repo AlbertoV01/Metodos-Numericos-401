@@ -272,7 +272,7 @@
       <DependentUpon>Formulario Secante.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Secante.cs" />
-    <Compile Include="ValidarTextboxs.cs" />
+    <Compile Include="Clases\ValidarTextboxs.cs" />
     <EmbeddedResource Include="FormsTema4\Integración\Formulaio Regla de Simpson 1_3 por intervalos.resx">
       <DependentUpon>Formulaio Regla de Simpson 1_3 por intervalos.cs</DependentUpon>
     </EmbeddedResource>
@@ -428,18 +428,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\img1.png" />
-    <Content Include="Images\img10.png" />
-    <Content Include="Images\img11.png" />
-    <Content Include="Images\img2.png" />
-    <Content Include="Images\img3.png" />
-    <Content Include="Images\img4.png" />
-    <Content Include="Images\img5.png" />
-    <Content Include="Images\img6.png" />
-    <Content Include="Images\img7.png" />
-    <Content Include="Images\img8.png" />
-    <Content Include="Images\img9.png" />
+    <Content Include="Images\imageBiseccion.png" />
+    <Content Include="Images\imageDdfa.png" />
+    <Content Include="Images\imageFalsaPosicion.png" />
+    <Content Include="Images\imageGauss.png" />
+    <Content Include="Images\imageJacobi.png" />
+    <Content Include="Images\imagePrincipal.png" />
+    <Content Include="Images\imageTrapecio.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
