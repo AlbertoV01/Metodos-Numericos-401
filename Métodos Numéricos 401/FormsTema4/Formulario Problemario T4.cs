@@ -25,8 +25,8 @@ namespace Métodos_Numéricos_401
 
         private void btn_Ejercicios_T2_Click(object sender, EventArgs e)
         {
-            string ruta_ReporteT4 = @"ProblemarioT4_AVR_ISC_401.pdf";
-            Process.Start(ruta_ReporteT4);
+            //string ruta_ReporteT4 = "";
+            //Process.Start(ruta_ReporteT4);
         }
     }
 }

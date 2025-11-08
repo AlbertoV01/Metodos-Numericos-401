@@ -95,13 +95,18 @@ namespace Métodos_Numéricos_401
             //CICLO PARA CALCULAR LA SUMATORIA DE LOS RESULTADOS
             for (int i=0;i< fvariables.Length;i++)
             {
-                sumatoria0=sumatoria0 + fvariables[i];
+                sumatoria0+=fvariables[i];
             }
+
             //APLICAMOS LA FORMULA
-            resultado = (n / 2) * (fvariables[1] + 2*sumatoria0);
+           // resultado = (n / 2) * (fvariables[1] + 2*sumatoria0);
+            resultado = (n / 2) * (fvariables[0] + 2 * sumatoria0 + fvariables[fvariables.Length - 1]);
+
+
             tb_resultado.Text = resultado.ToString();
             //CALCULAMOS EL ERROR RELATIVO PORCENTUAL
-            erp =Math.Abs(((valorverdadero - resultado) / valorverdadero)*100);
+
+            erp = Math.Abs(((valorverdadero - resultado) / valorverdadero) * 100);
             tb_Error.Text = erp.ToString()+"%";
         }
 

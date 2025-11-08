@@ -61,9 +61,9 @@
             this.btn_reglasimpson13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reglasimpson13.ForeColor = System.Drawing.Color.LightGray;
             this.btn_reglasimpson13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_reglasimpson13.Location = new System.Drawing.Point(-1, 232);
+            this.btn_reglasimpson13.Location = new System.Drawing.Point(12, 232);
             this.btn_reglasimpson13.Name = "btn_reglasimpson13";
-            this.btn_reglasimpson13.Size = new System.Drawing.Size(874, 35);
+            this.btn_reglasimpson13.Size = new System.Drawing.Size(1089, 35);
             this.btn_reglasimpson13.TabIndex = 16;
             this.btn_reglasimpson13.Text = "REGLA DE SIMPSON 1/3";
             this.btn_reglasimpson13.UseVisualStyleBackColor = false;
@@ -77,9 +77,9 @@
             this.btn_regla_trapecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_regla_trapecio.ForeColor = System.Drawing.Color.LightGray;
             this.btn_regla_trapecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_regla_trapecio.Location = new System.Drawing.Point(-1, 109);
+            this.btn_regla_trapecio.Location = new System.Drawing.Point(12, 109);
             this.btn_regla_trapecio.Name = "btn_regla_trapecio";
-            this.btn_regla_trapecio.Size = new System.Drawing.Size(874, 35);
+            this.btn_regla_trapecio.Size = new System.Drawing.Size(1089, 35);
             this.btn_regla_trapecio.TabIndex = 14;
             this.btn_regla_trapecio.Text = "REGLA DEL TRAPECIO";
             this.btn_regla_trapecio.UseVisualStyleBackColor = false;
@@ -93,9 +93,9 @@
             this.btn_regla_trapecio_i.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_regla_trapecio_i.ForeColor = System.Drawing.Color.LightGray;
             this.btn_regla_trapecio_i.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_regla_trapecio_i.Location = new System.Drawing.Point(-1, 150);
+            this.btn_regla_trapecio_i.Location = new System.Drawing.Point(12, 150);
             this.btn_regla_trapecio_i.Name = "btn_regla_trapecio_i";
-            this.btn_regla_trapecio_i.Size = new System.Drawing.Size(874, 35);
+            this.btn_regla_trapecio_i.Size = new System.Drawing.Size(1089, 35);
             this.btn_regla_trapecio_i.TabIndex = 15;
             this.btn_regla_trapecio_i.Text = "REGLA DEL TRAPECIO POR INTERVALOS";
             this.btn_regla_trapecio_i.UseVisualStyleBackColor = false;
@@ -109,9 +109,9 @@
             this.btn_regla_simpson_13_i.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_regla_simpson_13_i.ForeColor = System.Drawing.Color.LightGray;
             this.btn_regla_simpson_13_i.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_regla_simpson_13_i.Location = new System.Drawing.Point(-1, 273);
+            this.btn_regla_simpson_13_i.Location = new System.Drawing.Point(12, 273);
             this.btn_regla_simpson_13_i.Name = "btn_regla_simpson_13_i";
-            this.btn_regla_simpson_13_i.Size = new System.Drawing.Size(874, 35);
+            this.btn_regla_simpson_13_i.Size = new System.Drawing.Size(1089, 35);
             this.btn_regla_simpson_13_i.TabIndex = 18;
             this.btn_regla_simpson_13_i.Text = "REGLA DE SIMPSON 1/3 POR INTERVALOS";
             this.btn_regla_simpson_13_i.UseVisualStyleBackColor = false;
@@ -125,9 +125,9 @@
             this.btn_regla_simpson_38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_regla_simpson_38.ForeColor = System.Drawing.Color.LightGray;
             this.btn_regla_simpson_38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_regla_simpson_38.Location = new System.Drawing.Point(-1, 357);
+            this.btn_regla_simpson_38.Location = new System.Drawing.Point(12, 357);
             this.btn_regla_simpson_38.Name = "btn_regla_simpson_38";
-            this.btn_regla_simpson_38.Size = new System.Drawing.Size(874, 35);
+            this.btn_regla_simpson_38.Size = new System.Drawing.Size(1089, 35);
             this.btn_regla_simpson_38.TabIndex = 19;
             this.btn_regla_simpson_38.Text = "REGLA DE SIMPSON 3/8";
             this.btn_regla_simpson_38.UseVisualStyleBackColor = false;
@@ -138,14 +138,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1113, 744);
             this.Controls.Add(this.btn_regla_simpson_38);
             this.Controls.Add(this.btn_regla_simpson_13_i);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_reglasimpson13);
             this.Controls.Add(this.btn_regla_trapecio);
             this.Controls.Add(this.btn_regla_trapecio_i);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Integracion_Numerica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario_Integracion_Numerica";
             this.ResumeLayout(false);
 

@@ -55,11 +55,11 @@ namespace Métodos_Numéricos_401
             a = Convert.ToDouble(tb_a.Text);
             b = Convert.ToDouble(tb_b.Text);
             valorverdadero = Convert.ToDouble(tb_valorverdadero.Text);
-            n = ((b - a) / 2);
+          //  n = ((b - a) / 2);
 
 
             x0 = a;
-            x1 = n;
+            x1 = (a + b) / 2; ;
             x2 = b;
 
             if(oCalculo.Sintaxis(tb_Funcion.Text,'x'))
@@ -70,6 +70,7 @@ namespace Métodos_Numéricos_401
             }
 
             resultado = (b - a) *((fx0 + 4 * fx1 + fx2)/ 6);
+
             tb_resultado.Text = resultado.ToString();
             erp = Math.Abs((valorverdadero-resultado)/valorverdadero)*100;
             tb_Error.Text = erp.ToString() + "%";

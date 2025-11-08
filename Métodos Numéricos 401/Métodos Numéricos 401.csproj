@@ -86,10 +86,10 @@
     <Compile Include="Clases\Biseccion.cs" />
     <Compile Include="Clases\Ddf.cs" />
     <Compile Include="Clases\Falsa Posicion.cs" />
-    <Compile Include="Formulaio Regla de Simpson 1_3 por intervalos.cs">
+    <Compile Include="FormsTema4\Integración\Formulaio Regla de Simpson 1_3 por intervalos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulaio Regla de Simpson 1_3 por intervalos.Designer.cs">
+    <Compile Include="FormsTema4\Integración\Formulaio Regla de Simpson 1_3 por intervalos.Designer.cs">
       <DependentUpon>Formulaio Regla de Simpson 1_3 por intervalos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Biseccion.cs">
@@ -98,28 +98,28 @@
     <Compile Include="FormsTema2\FormsMetodosCerrados\Formulario Biseccion.Designer.cs">
       <DependentUpon>Formulario Biseccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario ddf adelante.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario ddf adelante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario ddf adelante.Designer.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario ddf adelante.Designer.cs">
       <DependentUpon>Formulario ddf adelante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario ddf atras.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario ddf atras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario ddf atras.Designer.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario ddf atras.Designer.cs">
       <DependentUpon>Formulario ddf atras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario ddf centrales.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario ddf centrales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario ddf centrales.Designer.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario ddf centrales.Designer.cs">
       <DependentUpon>Formulario ddf centrales.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsTema4\Formulario Diferenciacion.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario Diferenciacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsTema4\Formulario Diferenciacion.Designer.cs">
+    <Compile Include="FormsTema4\Diferenciacion\Formulario Diferenciacion.Designer.cs">
       <DependentUpon>Formulario Diferenciacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario Evaluaciones.cs">
@@ -140,10 +140,10 @@
     <Compile Include="FormsTema3\Formulario Gauss.Designer.cs">
       <DependentUpon>Formulario Gauss.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Integracion Numerica.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Integracion Numerica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Integracion Numerica.Designer.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Integracion Numerica.Designer.cs">
       <DependentUpon>Formulario Integracion Numerica.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsTema3\Formulario Iterativo Secuencial.cs">
@@ -218,28 +218,28 @@
     <Compile Include="FormsTema2\FormsMetodosAbiertos\Formulario Punto Fijo.Designer.cs">
       <DependentUpon>Formulario Punto Fijo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Regla de Simpson 1_3.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla de Simpson 1_3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Regla de Simpson 1_3.Designer.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla de Simpson 1_3.Designer.cs">
       <DependentUpon>Formulario Regla de Simpson 1_3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Regla de Simpson 3_8.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla de Simpson 3_8.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Regla de Simpson 3_8.Designer.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla de Simpson 3_8.Designer.cs">
       <DependentUpon>Formulario Regla de Simpson 3_8.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Regla del Trapecio Por Intervalos.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla del Trapecio Por Intervalos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Regla del Trapecio Por Intervalos.Designer.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla del Trapecio Por Intervalos.Designer.cs">
       <DependentUpon>Formulario Regla del Trapecio Por Intervalos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Regla del Trapecio.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla del Trapecio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Regla del Trapecio.Designer.cs">
+    <Compile Include="FormsTema4\Integración\Formulario Regla del Trapecio.Designer.cs">
       <DependentUpon>Formulario Regla del Trapecio.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsTema3\Gauss-Seidel.cs">
@@ -273,22 +273,22 @@
     </Compile>
     <Compile Include="Clases\Secante.cs" />
     <Compile Include="ValidarTextboxs.cs" />
-    <EmbeddedResource Include="Formulaio Regla de Simpson 1_3 por intervalos.resx">
+    <EmbeddedResource Include="FormsTema4\Integración\Formulaio Regla de Simpson 1_3 por intervalos.resx">
       <DependentUpon>Formulaio Regla de Simpson 1_3 por intervalos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema2\FormsMetodosCerrados\Formulario Biseccion.resx">
       <DependentUpon>Formulario Biseccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario ddf adelante.resx">
+    <EmbeddedResource Include="FormsTema4\Diferenciacion\Formulario ddf adelante.resx">
       <DependentUpon>Formulario ddf adelante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario ddf atras.resx">
+    <EmbeddedResource Include="FormsTema4\Diferenciacion\Formulario ddf atras.resx">
       <DependentUpon>Formulario ddf atras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario ddf centrales.resx">
+    <EmbeddedResource Include="FormsTema4\Diferenciacion\Formulario ddf centrales.resx">
       <DependentUpon>Formulario ddf centrales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsTema4\Formulario Diferenciacion.resx">
+    <EmbeddedResource Include="FormsTema4\Diferenciacion\Formulario Diferenciacion.resx">
       <DependentUpon>Formulario Diferenciacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario Evaluaciones.resx">
@@ -300,7 +300,7 @@
     <EmbeddedResource Include="FormsTema3\Formulario Gauss.resx">
       <DependentUpon>Formulario Gauss.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Integracion Numerica.resx">
+    <EmbeddedResource Include="FormsTema4\Integración\Formulario Integracion Numerica.resx">
       <DependentUpon>Formulario Integracion Numerica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema3\Formulario Iterativo Secuencial.resx">
@@ -339,16 +339,16 @@
     <EmbeddedResource Include="FormsTema2\FormsMetodosAbiertos\Formulario Punto Fijo.resx">
       <DependentUpon>Formulario Punto Fijo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Regla de Simpson 1_3.resx">
+    <EmbeddedResource Include="FormsTema4\Integración\Formulario Regla de Simpson 1_3.resx">
       <DependentUpon>Formulario Regla de Simpson 1_3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Regla de Simpson 3_8.resx">
+    <EmbeddedResource Include="FormsTema4\Integración\Formulario Regla de Simpson 3_8.resx">
       <DependentUpon>Formulario Regla de Simpson 3_8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Regla del Trapecio Por Intervalos.resx">
+    <EmbeddedResource Include="FormsTema4\Integración\Formulario Regla del Trapecio Por Intervalos.resx">
       <DependentUpon>Formulario Regla del Trapecio Por Intervalos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Regla del Trapecio.resx">
+    <EmbeddedResource Include="FormsTema4\Integración\Formulario Regla del Trapecio.resx">
       <DependentUpon>Formulario Regla del Trapecio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsTema3\Gauss-Seidel.resx">
@@ -389,21 +389,6 @@
     <None Include="Resources\ITSG_LOGO_OFFICIAL.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ejercicio_Errores1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Eejercicio1_Tema1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ejercicio2_Tema1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ejercicio3_Tema1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Mapa Conceptual.bmp.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\PrimerDerivadaSegundaFormula.PNG" />
   </ItemGroup>
   <ItemGroup>
@@ -441,18 +426,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Evaluacion 1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Evaluacion2.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Evalacion3.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Evaluacion 4.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\img1.png" />

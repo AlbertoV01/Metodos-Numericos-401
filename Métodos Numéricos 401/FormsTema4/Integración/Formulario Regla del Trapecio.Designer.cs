@@ -51,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(377, 49);
+            this.label1.Location = new System.Drawing.Point(469, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 49;
@@ -62,7 +62,7 @@
             this.tb_Funcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_Funcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_Funcion.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_Funcion.Location = new System.Drawing.Point(184, 65);
+            this.tb_Funcion.Location = new System.Drawing.Point(276, 65);
             this.tb_Funcion.Name = "tb_Funcion";
             this.tb_Funcion.Size = new System.Drawing.Size(435, 20);
             this.tb_Funcion.TabIndex = 48;
@@ -74,7 +74,7 @@
             this.btn_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.LightSalmon;
-            this.btn_Salir.Location = new System.Drawing.Point(184, 472);
+            this.btn_Salir.Location = new System.Drawing.Point(276, 472);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(97, 23);
             this.btn_Salir.TabIndex = 67;
@@ -87,7 +87,7 @@
             this.btn_Limpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.btn_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Limpiar.ForeColor = System.Drawing.Color.LightSalmon;
-            this.btn_Limpiar.Location = new System.Drawing.Point(349, 472);
+            this.btn_Limpiar.Location = new System.Drawing.Point(441, 472);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(110, 23);
             this.btn_Limpiar.TabIndex = 66;
@@ -100,7 +100,7 @@
             this.btn_Calcular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Coral;
             this.btn_Calcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Calcular.ForeColor = System.Drawing.Color.LightSalmon;
-            this.btn_Calcular.Location = new System.Drawing.Point(522, 472);
+            this.btn_Calcular.Location = new System.Drawing.Point(614, 472);
             this.btn_Calcular.Name = "btn_Calcular";
             this.btn_Calcular.Size = new System.Drawing.Size(97, 23);
             this.btn_Calcular.TabIndex = 65;
@@ -113,7 +113,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(288, 172);
+            this.label2.Location = new System.Drawing.Point(380, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(289, 31);
             this.label2.TabIndex = 68;
@@ -124,7 +124,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightSalmon;
-            this.label3.Location = new System.Drawing.Point(253, 9);
+            this.label3.Location = new System.Drawing.Point(345, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(313, 31);
             this.label3.TabIndex = 69;
@@ -135,7 +135,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(332, 279);
+            this.label4.Location = new System.Drawing.Point(424, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(181, 31);
             this.label4.TabIndex = 70;
@@ -146,7 +146,7 @@
             this.tb_resultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_resultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_resultado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tb_resultado.Location = new System.Drawing.Point(184, 313);
+            this.tb_resultado.Location = new System.Drawing.Point(276, 313);
             this.tb_resultado.Name = "tb_resultado";
             this.tb_resultado.ReadOnly = true;
             this.tb_resultado.Size = new System.Drawing.Size(435, 20);
@@ -158,7 +158,7 @@
             this.tb_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_a.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_a.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_a.Location = new System.Drawing.Point(184, 126);
+            this.tb_a.Location = new System.Drawing.Point(276, 126);
             this.tb_a.Name = "tb_a";
             this.tb_a.Size = new System.Drawing.Size(97, 20);
             this.tb_a.TabIndex = 72;
@@ -171,7 +171,7 @@
             this.tb_b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_b.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_b.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_b.Location = new System.Drawing.Point(522, 126);
+            this.tb_b.Location = new System.Drawing.Point(614, 126);
             this.tb_b.Name = "tb_b";
             this.tb_b.Size = new System.Drawing.Size(97, 20);
             this.tb_b.TabIndex = 73;
@@ -184,7 +184,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightGray;
-            this.label5.Location = new System.Drawing.Point(226, 103);
+            this.label5.Location = new System.Drawing.Point(318, 103);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 20);
             this.label5.TabIndex = 74;
@@ -195,7 +195,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightGray;
-            this.label6.Location = new System.Drawing.Point(559, 103);
+            this.label6.Location = new System.Drawing.Point(651, 103);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(18, 20);
             this.label6.TabIndex = 75;
@@ -206,7 +206,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.LightGray;
-            this.label7.Location = new System.Drawing.Point(345, 103);
+            this.label7.Location = new System.Drawing.Point(437, 103);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(125, 20);
             this.label7.TabIndex = 76;
@@ -217,7 +217,7 @@
             this.tb_valorverdadero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_valorverdadero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_valorverdadero.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_valorverdadero.Location = new System.Drawing.Point(349, 126);
+            this.tb_valorverdadero.Location = new System.Drawing.Point(441, 126);
             this.tb_valorverdadero.Name = "tb_valorverdadero";
             this.tb_valorverdadero.Size = new System.Drawing.Size(110, 20);
             this.tb_valorverdadero.TabIndex = 77;
@@ -230,7 +230,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.LightGray;
-            this.label8.Location = new System.Drawing.Point(224, 361);
+            this.label8.Location = new System.Drawing.Point(316, 361);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(449, 31);
             this.label8.TabIndex = 78;
@@ -241,7 +241,7 @@
             this.tb_Error.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.tb_Error.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_Error.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tb_Error.Location = new System.Drawing.Point(184, 417);
+            this.tb_Error.Location = new System.Drawing.Point(276, 417);
             this.tb_Error.Name = "tb_Error";
             this.tb_Error.ReadOnly = true;
             this.tb_Error.Size = new System.Drawing.Size(435, 20);
@@ -253,7 +253,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1033, 549);
             this.Controls.Add(this.tb_Error);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tb_valorverdadero);
@@ -271,6 +271,7 @@
             this.Controls.Add(this.btn_Calcular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_Funcion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Regla_del_Trapecio";
             this.Text = "Formulario_Regla_del_Trapecio";
             this.ResumeLayout(false);

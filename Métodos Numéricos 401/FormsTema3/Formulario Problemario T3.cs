@@ -25,20 +25,20 @@ namespace Métodos_Numéricos_401
 
         private void btn_ReporteT2_Click(object sender, EventArgs e)
         {
-            string ruta_ReporteT3 = @"Reporte_Tema3_AVR_ISC_401.pdf";
-            Process.Start(ruta_ReporteT3);
+            //string ruta_ReporteT3 = "";
+            //Process.Start(ruta_ReporteT3);
         }
 
         private void btn_ExcelT2_Click(object sender, EventArgs e)
         {
-            string ruta_ExcelT3 = @"Reporte_Excel_Tema3_AVR_ISC_401.xlsx";
-            Process.Start(ruta_ExcelT3);
+            //string ruta_ExcelT3 = @"";
+            //Process.Start(ruta_ExcelT3);
         }
 
         private void btn_Ejercicios_T2_Click(object sender, EventArgs e)
         {
-            string ruta_ReporteT3 = @"EjerciciosTema3.pdf";
-            Process.Start(ruta_ReporteT3);
+            //string ruta_ReporteT3 = @"";
+            //Process.Start(ruta_ReporteT3);
         }
     }
 }
