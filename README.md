@@ -1,14 +1,41 @@
 # Métodos Numéricos 401
-![image](images/img1.png)
-![image](images/img2.png)
-![image](images/img3.png)
-![image](images/img4.png)
-![image](images/img5.png)
-![image](images/img6.png)
-![image](images/img7.png)
-![image](images/img8.png)
-![image](images/img9.png)
-![image](images/img10.png)
-![image](images/img11.png)
+Proyecto de la matería de Métodos Numéricos, en el cual se resuelven algunos ejercicios con técnicas de aproximación.
 
+
+![image](Métodos%20Numéricos%20401/Images/imagePrincipal.png)
+
+## Método de Bisección
+
+
+![image](Métodos%20Numéricos%20401/Images/imageBiseccion.png)
+
+
+## Método Falsa Posición
+
+
+![image](Métodos%20Numéricos%20401/Images/imageFalsaPosicion.png)
+
+
+## Método Gauss
+
+![image](Métodos%20Numéricos%20401/Images/imageGauss.png)
+
+
+## Método Jacobi
+
+
+![image](Métodos%20Numéricos%20401/Images/imageJacobi.png)
+
+
+## Diferencias Divididas Finitas Hacia Adelante
+
+
+![image](Métodos%20Numéricos%20401/Images/imageDdfa.png)
+
+
+
+## Regla del Trapecio
+
+
+![image](Métodos%20Numéricos%20401/Images/imageTrapecio.png)
 
